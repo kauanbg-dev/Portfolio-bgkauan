@@ -1,0 +1,13 @@
+footer {
+    background-color: #222;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer spam {
+    font-size: 0.7em;
+    font-weight: 500;
+}
