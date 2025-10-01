@@ -1,23 +1,60 @@
+/* RESET GLOBAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* BODY */
 body {
-    width: 100%;
-    height: 100vh;
-
-    background-color: #333;
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
+/* LINKS */
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* IMAGENS */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LISTAS */
+ul, ol {
+  list-style: none;
+}
+
+/* TITULOS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* BOTÕES */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* INPUTS */
+input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
 }
