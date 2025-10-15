@@ -170,25 +170,3 @@ main figure figcaption {
   background-color: #00ffff;
 }
 
-.curriculo-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.btn-download {
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-download:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
