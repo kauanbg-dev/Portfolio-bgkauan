@@ -1,88 +1,194 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Kauan</title>
+main {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
+/* MAIN CONTENT ================ */
+main .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+main .main-content h2 {
+  margin-bottom: 2%;
+  font-size: 2.4em;
+  text-align: center;
+  color: #00e0ff;
+}
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/4c2f84ae4c.js" crossorigin="anonymous" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Kauan Borges</h1>
-    <nav>
-      <a href="https://github.com/kauanbg-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/eukauan.dev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </nav>
-  </header>
+main .main-content .text {
+  margin-bottom: 6%;
+}
 
-  <main>
-    <section class="main-content">
-      <article class="text">
-        <h2>Sobre mim</h2>
-        <p>
-          Olá, eu sou Kauan Borges 👋<br />
-          Atualmente curso Análise e Desenvolvimento de Sistemas (4º período) e tenho uma paixão enorme por programação e tecnologia. Estou sempre em busca de novos aprendizados e desafios, explorando diferentes linguagens, ferramentas e metodologias que me ajudam a evoluir como desenvolvedor.<br />
-          Este portfólio é o espaço onde compartilho minha trajetória, projetos que desenvolvi, ideias que coloquei em prática e experiências que me ajudam a crescer a cada dia. Meu objetivo é não apenas mostrar o que já fiz, mas também inspirar e colaborar com quem ainda acredita no poder da tecnologia para transformar o mundo.<br />
-          Fique à vontade para explorar meus projetos, conhecer um pouco mais sobre meu trabalho e acompanhar de perto minha jornada na área de TI 🚀
-        </p>
+main .main-content .text p {
+  width: 75%;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto;
+  color: #ddd;
+}
 
-        <!-- Currículo -->
-        <div class="curriculo-container">
-          <a href="/public/curriculo-kauan.pdf" download class="btn-download">
-            📄 Baixar Currículo
-          </a>
-        </div>
-      </article>
+/* CARDS ========= */
+main .techs .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
 
-      <aside class="techs">
-        <h2>🧑‍💻 Tecnologias</h2>
-        <div class="cards-container">
-          <div class="card"><img src="img/html-5-svgrepo-com.svg" alt="Logo do HTML5" /></div>
-          <div class="card"><img src="img/css-3-svgrepo-com.svg" alt="Logo do CSS3" /></div>
-          <div class="card"><img src="img/js-svgrepo-com.svg" alt="Logo do JavaScript" /></div>
-          <div class="card"><img src="img/react-brands-solid-full.svg" alt="Logo do React" /></div>
-        </div>
-      </aside>
+main .techs .cards-container .card {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
 
-      <section class="projetos">
-        <h2>🚀 Projetos</h2>
-        <div class="projetos-container">
-          <div class="projeto-card">
-            <img src="img/bgconverterimg.png" alt="Preview do BgConverter" />
-            <h3>BgConverter</h3>
-            <p>Conversor de moedas com taxas em tempo real usando CurrencyAPI. Interface responsiva e animações suaves.</p>
-            <div class="links">
-              <a href="https://bgconverter.vercel.app/" target="_blank">🔗 Ver projeto</a>
-              <a href="https://github.com/kauanbg-dev/bgconverter" target="_blank">📂 Ver código</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+main .techs .cards-container .card img {
+  width: 80%;
+}
 
-    <figure>
-      <img src="img/perfil.jpeg" alt="Imagem de Kauan" />
-      <figcaption>Kauan Borges de Souza</figcaption>
-    </figure>
-  </main>
+main .techs .cards-container .card:hover {
+  box-shadow: 0px 0px 8px #00e0ff;
+}
 
-  <footer>
-    <span>&copy; Kauan Borges, 2025 - Todos os direitos reservados.</span>
-  </footer>
-</body>
-</html>
+/* FIGURE ============== */
+main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+main figure img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px #00e0ff solid;
+  transition: 0.2s ease-in-out;
+}
+
+main figure img:hover {
+  box-shadow: 0px 0px 6px #00e0ff;
+}
+
+main figure figcaption {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ddd;
+}
+
+/* PROJETOS ============== */
+.projetos {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.projetos h2 {
+  font-size: 2.4em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #00e0ff;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.projeto-card {
+  width: 320px;
+  padding: 16px;
+  border: 1px solid #00e0ff;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  background-color: #222;
+}
+
+.projeto-card:hover {
+  transform: scale(1.03);
+  border-color: #00ffff;
+}
+
+.projeto-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.projeto-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #00e0ff;
+}
+
+.projeto-card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.projeto-card .links {
+  display: flex;
+  gap: 10px;
+}
+
+.projeto-card .links a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 12px;
+  background-color: #00e0ff;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.projeto-card .links a:hover {
+  background-color: #00ffff;
+}
+
+.curriculo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-download {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
