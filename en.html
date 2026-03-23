@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauan Borges | Portfolio</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">BG</a>
+
+    <nav>
+      <a href="#sobre">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projects</a>
+      <a href="#contato">Contact</a>
+
+      <div class="lang-switch">
+  <a href="index.html" class="lang lang-pt" data-lang="pt">🇧🇷 PT</a>
+  <a href="en.html" class="lang lang-en active" data-lang="en">🇺🇸 EN</a>
+</div>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <span class="tag">Developer Portfolio</span>
+        <h1>Kauan Borges</h1>
+        <h2>Front-end Developer in Training</h2>
+        <p>
+          I am a Systems Analysis and Development student focused on building
+          modern, responsive and functional web interfaces. I am currently
+          developing my skills through practical projects and continuous learning.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn primary">View Projects</a>
+          <a href="#contato" class="btn secondary">Contact Me</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <strong>5th</strong>
+            <span>semester in ADS</span>
+          </div>
+          <div class="stat-card">
+            <strong>4+</strong>
+            <span>main technologies</span>
+          </div>
+          <div class="stat-card">
+            <strong>2+</strong>
+            <span>published projects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="/img/perfil.jpg" alt="Kauan Borges Photo" />
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="section-title">
+        <span>About Me</span>
+        <h3>Who I Am</h3>
+      </div>
+
+      <div class="about-card">
+        <p>
+          Hello, I'm Kauan Borges. I am currently studying Systems Analysis and
+          Development and improving my skills in web development using HTML, CSS,
+          JavaScript and React.
+        </p>
+        <p>
+          I enjoy transforming ideas into clean, modern and functional interfaces.
+          My goal is to start my career in technology, grow as a developer and
+          build increasingly complete projects for my portfolio.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-title">
+        <span>Skills</span>
+        <h3>Technologies I Use</h3>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="./img/logo-html-5-.png" alt="HTML Logo" />
+          <h4>HTML5</h4>
+          <p>Semantic structuring of web pages and components.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="./img/logo-css-.png" alt="CSS Logo" />
+          <h4>CSS3</h4>
+          <p>Modern styling, responsiveness and visual organization.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="./img/logo-javascript-.png" alt="JavaScript Logo" />
+          <h4>JavaScript</h4>
+          <p>Interactivity, logic and API integration.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="./img/react-brands-solid-full.svg" alt="React Logo" />
+          <h4>React</h4>
+          <p>Building dynamic and component-based interfaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-title">
+        <span>Projects</span>
+        <h3>Featured Work</h3>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="./img/bgconverter-prewiew.png" alt="BgConverter Preview" />
+          <div class="project-content">
+            <h4>BgConverter</h4>
+            <p>
+              Currency converter with real-time updates using an external API.
+              Focused on API integration, responsiveness and user experience.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>API</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://bgconverter.vercel.app" target="_blank">View Project</a>
+              <a href="https://github.com/" target="_blank">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="./img/bgfinance-prewiew.png" alt="BG Finance Preview" />
+          <div class="project-content">
+            <h4>BG Finance</h4>
+            <p>
+              Financial management system designed to organize income, expenses
+              and personal finances. Focused on authentication, dashboard and
+              user experience.
+            </p>
+
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>SQLite</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://bg-finance-delta.vercel.app/login.html" target="_blank">View Project</a>
+              <a href="https://github.com/kauanbg-dev/bg-finance" target="_blank">View Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section objective">
+      <div class="section-title">
+        <span>Career Goal</span>
+        <h3>My Professional Goal</h3>
+      </div>
+
+      <div class="about-card">
+        <p>
+          I am looking for my first opportunity as a developer to apply my
+          knowledge, grow technically and contribute to real-world projects,
+          creating modern, useful and well-structured web solutions.
+        </p>
+      </div>
+    </section>
+
+    <section id="curriculo" class="section">
+      <div class="section-title">
+        <span>Resume</span>
+        <h3>My Professional Resume</h3>
+      </div>
+
+      <div class="resume-card">
+        <p>
+          You can view or download my complete resume with details about my
+          education, experience and technical skills.
+        </p>
+
+        <div class="resume-buttons">
+          <a href="./resume-en.pdf" target="_blank" class="btn primary">
+            View Resume
+          </a>
+
+          <a href="./resume-en.pdf" download class="btn secondary">
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="section-title">
+        <span>Contact</span>
+        <h3>Let's Connect</h3>
+      </div>
+
+      <div class="contact-grid">
+        <a href="https://github.com/kauanbg-dev" target="_blank" class="contact-card">
+          <strong>GitHub</strong>
+          <span>@kauanbg-dev</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank" class="contact-card">
+          <strong>LinkedIn</strong>
+          <span>kauan-borges</span>
+        </a>
+
+        <a href="mailto:seuemail@email.com" class="contact-card">
+          <strong>Email</strong>
+          <span>kauanbg.dev@gmail.com</span>
+        </a>
+
+        <a href="https://www.instagram.com/eukauan.dev/" target="_blank" class="contact-card">
+          <strong>Instagram</strong>
+          <span>@eukauan.dev</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Kauan Borges. All rights reserved.</p>
+  </footer>
+</body>
+</html>
