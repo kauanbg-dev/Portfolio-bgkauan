@@ -1,84 +1,130 @@
-body {
-  font-family: "Inter", sans-serif;
-  background: #0b0f19;
-  color: #ffffff;
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(11, 15, 25, .85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,.06);
 }
+
+/* =========================
+   LOGO
+========================= */
+
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #00e0ff;
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .logo img {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-}
-header {
-  width: 100%;
-  padding: 22px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    width: auto;
+    height: 38px;
+    object-fit: contain;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #00e0ff;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
+/* =========================
+   MENU
+========================= */
 
 header nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
 header nav a {
-  color: #d9e1f2;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: 0.3s ease;
+    position: relative;
+
+    color: #d9e1f2;
+    font-size: 1rem;
+    font-weight: 500;
+
+    transition: .3s;
 }
 
 header nav a:hover {
-  color: #00e0ff;
+    color: #00e0ff;
 }
 
+/* Linha animada */
+
+header nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #00e0ff;
+    transition: .3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   IDIOMAS
+========================= */
+
 .lang-switch {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 6px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
 }
 
 .lang {
-  padding: 8px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #cfd7e8;
-  transition: 0.3s ease;
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font-size: .9rem;
+    font-weight: 600;
+
+    color: #cfd7e8;
+
+    transition: .3s;
 }
 
 .lang:hover {
-  background: rgba(0, 224, 255, 0.1);
-  color: #00e0ff;
+    background: rgba(0,224,255,.1);
+    color: #00e0ff;
 }
 
 .lang.active {
-  background: #00e0ff;
-  color: #081018;
+    background: #00e0ff;
+    color: #081018;
 }

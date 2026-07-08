@@ -1,60 +1,107 @@
-/* RESET GLOBAL */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+/* =========================
+   RESET GLOBAL
+========================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* BODY */
-body {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-}
+/* =========================
+   HTML
+========================= */
 
-/* LINKS */
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-/* IMAGENS */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* LISTAS */
-ul, ol {
-  list-style: none;
-}
-
-/* TITULOS */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
-
-/* BOTÕES */
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* INPUTS */
-input, textarea {
-  font-family: inherit;
-  border: none;
-  outline: none;
-}
-
-/* HTML */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f19;
+    color: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* =========================
+   TEXTOS
+========================= */
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
 }
