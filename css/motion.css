@@ -1,0 +1,121 @@
+.has-motion body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    520px circle at var(--mx, 50%) var(--my, 20%),
+    rgba(0, 224, 255, 0.09),
+    transparent 42%
+  );
+}
+
+.has-motion main,
+.has-motion header,
+.has-motion footer {
+  position: relative;
+  z-index: 1;
+}
+
+header.is-scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
+}
+
+.nav-links a.is-active {
+  color: #00e0ff;
+}
+
+.nav-links a.is-active::after {
+  width: 100%;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease var(--delay, 0ms),
+    transform 0.7s ease var(--delay, 0ms);
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-image img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.has-motion .hero-image img {
+  animation: photo-glow 4.5s ease-in-out infinite;
+}
+
+@keyframes photo-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 8px rgba(0, 224, 255, 0.06),
+      0 20px 60px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    box-shadow:
+      0 0 0 12px rgba(0, 224, 255, 0.12),
+      0 24px 70px rgba(0, 224, 255, 0.12);
+  }
+}
+
+.btn,
+.project-links a {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after,
+.project-links a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.28), transparent 80%);
+  transform: translateX(-120%);
+}
+
+.btn:hover::after,
+.project-links a:hover::after {
+  transform: translateX(120%);
+  transition: transform 0.55s ease;
+}
+
+.skill-card,
+.contact-card,
+.stat-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.contact-card:hover,
+.stat-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 224, 255, 0.08);
+}
+
+[data-tilt] {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+}
+
+[data-tilt]:hover {
+  border-color: rgba(0, 224, 255, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .has-motion .hero-image img {
+    animation: none;
+  }
+}

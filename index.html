@@ -4,284 +4,294 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kauan Borges | Portfólio</title>
+  <meta name="description" content="Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor web em formação. Projetos com HTML, CSS, JavaScript, React e Node.js." />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="canonical" href="https://portifolio-bgkauan.vercel.app/" />
+  <meta property="og:title" content="Kauan Borges | Portfólio" />
+  <meta property="og:description" content="Interfaces modernas, projetos reais e evolução constante em desenvolvimento web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portifolio-bgkauan.vercel.app/" />
+  <meta property="og:image" content="https://portifolio-bgkauan.vercel.app/img/perfil.jpg" />
+  <link rel="icon" href="./img/logo-bg-iluminada.png" type="image/png" />
 
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/motion.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-<a href="#" class="logo">
-    <img src="./img/logo-bg-iluminada.png" alt="Logo BG">
-    <span>Kauan Borges</span>
-</a>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#skills">Skills</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+  <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
-<div class="lang-switch">
-  <a href="index.html" class="lang lang-pt active" data-lang="pt">🇧🇷 PT</a>
-  <a href="en.html" class="lang lang-en" data-lang="en">🇺🇸 EN</a>
-</div>
+  <header>
+    <a href="#conteudo" class="logo">
+      <img src="./img/logo-bg-iluminada.png" alt="" />
+      <span>Kauan Borges</span>
+    </a>
+
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only" data-i18n="menu">Abrir menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="site-nav" data-nav>
+      <div class="nav-links">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </div>
+
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="hero">
       <div class="hero-text">
-        <span class="tag">Portfólio de Desenvolvedor</span>
+        <span class="tag" data-i18n="hero.tag">Portfólio de Desenvolvedor</span>
         <h1>Kauan Borges</h1>
-        <h2>Desenvolvedor Front-end em formação</h2>
-    <p>
-      Sou estudante de Ciência da Computação, com foco em
-      interfaces modernas, responsivas e funcionais. Estou construindo minha
-      trajetória na tecnologia por meio de projetos práticos e evolução constante.
-    </p>
+        <h2 data-i18n="hero.role">Desenvolvedor web em formação</h2>
+        <p data-i18n="hero.text">
+          Estudante de Ciência da Computação no 5º período. Construo interfaces
+          claras, responsivas e funcionais — e já publico projetos com HTML, CSS,
+          JavaScript, React e Node.js.
+        </p>
         <div class="hero-buttons">
-          <a href="#projetos" class="btn primary">Ver projetos</a>
-          <a href="#contato" class="btn secondary">Entrar em contato</a>
+          <a href="#projetos" class="btn primary" data-i18n="hero.projects">Ver projetos</a>
+          <a href="mailto:kauanbg.dev@gmail.com" class="btn secondary" data-i18n="hero.contact">Falar comigo</a>
         </div>
 
         <div class="stats">
           <div class="stat-card">
-            <strong>5º</strong>
-            <span>período em Ciência da Computação</span>
+            <strong data-i18n="hero.stat1">5º</strong>
+            <span data-i18n="hero.stat1Label">período em Ciência da Computação</span>
           </div>
           <div class="stat-card">
-            <strong>4+</strong>
-            <span>tecnologias principais</span>
+            <strong>6+</strong>
+            <span data-i18n="hero.stat2Label">tecnologias em uso nos projetos</span>
           </div>
           <div class="stat-card">
-            <strong>3+</strong>
-            <span>projetos publicados</span>          </div>
+            <strong>3</strong>
+            <span data-i18n="hero.stat3Label">projetos publicados com código aberto</span>
+          </div>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="/img/perfil.jpg" alt="Foto de Kauan Borges" />
+        <img src="./img/perfil.jpg" data-hero-photo data-i18n-alt="hero.photo" alt="Foto de Kauan Borges" width="320" height="320" />
       </div>
     </section>
 
-    <section id="sobre" class="section">
+    <section id="sobre" class="section" data-reveal>
       <div class="section-title">
-        <span>Sobre mim</span>
-        <h3>Quem sou eu</h3>
+        <span data-i18n="about.kicker">Sobre mim</span>
+        <h3 data-i18n="about.title">Quem sou eu</h3>
       </div>
 
       <div class="about-card">
-        <p>
-          Olá, eu sou Kauan Borges. Atualmente curso Ciência da Computação 
-          e venho aprimorando minhas habilidades em desenvolvimento
-          web com HTML, CSS, JavaScript e React.
+        <p data-i18n="about.p1">
+          Olá, eu sou Kauan Borges. Curso Ciência da Computação e desenvolvo
+          produtos web do layout à lógica: sites institucionais, apps com API e
+          um sistema financeiro com autenticação.
         </p>
-        <p>
-          Gosto de transformar ideias em interfaces organizadas, bonitas e
-          funcionais. Meu objetivo é conquistar oportunidades na área de
-          tecnologia, evoluir como desenvolvedor e construir projetos cada vez
-          mais completos para meu portfólio.
+        <p data-i18n-html="about.p2">
+          Meus trabalhos recentes incluem o
+          <a href="#projetos">BgConverter</a>, o
+          <a href="#projetos">BG Finance</a> e o site
+          <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time,
+          receber feedback e entregar interfaces úteis para pessoas reais.
         </p>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section" data-reveal>
       <div class="section-title">
-        <span>Skills</span>
-        <h3>Tecnologias que utilizo</h3>
+        <span data-i18n="skills.kicker">Skills</span>
+        <h3 data-i18n="skills.title">Tecnologias que utilizo</h3>
       </div>
 
       <div class="skills-grid">
-        <div class="skill-card">
-          <img src="./img/logo-html-5-.png" alt="Logo HTML" />
+        <article class="skill-card">
+          <img src="./img/logo-html-5-.png" alt="" />
           <h4>HTML5</h4>
-          <p>Estruturação semântica de páginas e componentes web.</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="./img/logo-css-.png" alt="Logo CSS" />
+          <p data-i18n="skills.html">Estrutura semântica, acessibilidade básica e páginas bem organizadas.</p>
+        </article>
+        <article class="skill-card">
+          <img src="./img/logo-css-.png" alt="" />
           <h4>CSS3</h4>
-          <p>Estilização moderna, responsiva e organização visual.</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="./img/logo-javascript-.png" alt="Logo JavaScript" />
+          <p data-i18n="skills.css">Layout responsivo, hierarquia visual e componentes reutilizáveis.</p>
+        </article>
+        <article class="skill-card">
+          <img src="./img/logo-javascript-.png" alt="" />
           <h4>JavaScript</h4>
-          <p>Interatividade, lógica e consumo de APIs em projetos web.</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="./img/react-brands-solid-full.svg" alt="Logo React" />
+          <p data-i18n="skills.js">Interatividade, consumo de APIs e lógica no front-end.</p>
+        </article>
+        <article class="skill-card">
+          <img src="./img/react-brands-solid-full.svg" alt="" />
           <h4>React</h4>
-          <p>Criação de interfaces dinâmicas e componentizadas.</p>
-        </div>
+          <p data-i18n="skills.react">Interfaces em componentes e estados para telas dinâmicas.</p>
+        </article>
+        <article class="skill-card">
+          <img src="./img/logo-nodejs.svg" alt="" />
+          <h4>Node.js</h4>
+          <p data-i18n="skills.node">APIs, autenticação e backend para o BG Finance.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icons">
+            <img src="./img/logo-git.svg" alt="" />
+            <img src="./img/logo-github.svg" alt="" />
+          </div>
+          <h4>Git &amp; GitHub</h4>
+          <p data-i18n="skills.git">Versionamento, publicação e histórico aberto dos projetos.</p>
+        </article>
       </div>
     </section>
 
-    <section id="projetos" class="section">
+    <section id="projetos" class="section" data-reveal>
       <div class="section-title">
-        <span>Projetos</span>
-        <h3>Trabalhos em destaque</h3>
+        <span data-i18n="projects.kicker">Projetos</span>
+        <h3 data-i18n="projects.title">Trabalhos em destaque</h3>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card">
-          <img src="./img/bgconverter-prewiew.png" alt="Preview do projeto BgConverter" />
+        <article class="project-card" data-tilt>
+          <img src="./img/preview-bgconverter.png" data-i18n-alt="projects.converterAlt" alt="Tela do conversor de moedas BgConverter" />
           <div class="project-content">
             <h4>BgConverter</h4>
-            <p>
-              Conversor de moedas com atualização em tempo real utilizando API
-              externa. Projeto focado em consumo de API, responsividade e boa
-              experiência do usuário.
+            <p data-i18n="projects.converter">
+              Conversor de moedas com cotação em tempo real via API. Foco em
+              consumo de dados, layout responsivo e uso simples.
             </p>
-
             <div class="project-tech">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
               <span>API</span>
             </div>
-
             <div class="project-links">
-              <a href="https://bgconverter.vercel.app" target="_blank">Ver projeto</a>
-              <a href="https://github.com/kauanbg-dev/bgconverter" target="_blank">Ver código</a>
+              <a href="https://bgconverter.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
+              <a class="ghost" href="https://github.com/kauanbg-dev/bgconverter" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Ver código</a>
             </div>
           </div>
         </article>
-    <article class="project-card">
-  <img src="./img/Bg-finance.png" alt="Logo do projeto BG Finance" />
-  <div class="project-content">
-    <h4>BG Finance</h4>
-    <p>
-      Sistema de controle financeiro desenvolvido para organização de receitas,
-      despesas e gerenciamento financeiro pessoal. Projeto com foco em
-      autenticação, dashboard e experiência do usuário.
-    </p>
 
-    <div class="project-tech">
-      <span>Node.js</span>
-      <span>Express.js</span>
-      <span>PostgreSQL</span>
-      <span>Git</span>
-      <span>JWT</span>
-      <span>JavaScript</span>
-    </div>
+        <article class="project-card" data-tilt>
+          <img src="./img/preview-bgfinance.png" data-i18n-alt="projects.financeAlt" alt="Interface do sistema BG Finance" />
+          <div class="project-content">
+            <h4>BG Finance</h4>
+            <p data-i18n="projects.finance">
+              Controle de receitas e despesas com login, dashboard e fluxo de
+              usuário. Stack de backend + front-end para um produto completo.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>JavaScript</span>
+              <span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://bg-finance.onrender.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
+              <a class="ghost" href="https://github.com/kauanbg-dev/bg-finance" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Ver código</a>
+            </div>
+          </div>
+        </article>
 
-    <div class="project-links">
-      <a href="https://bg-finance.onrender.com" target="_blank">Ver projeto</a>
-      <a href="https://github.com/kauanbg-dev/bg-finance" target="_blank">Ver código</a>
-    </div>
-  </div>
-</article>    
-      <article class="project-card">
-  <img src="./img/pratique.jpg" alt="Logo do projeto Pratique + Pilates" />
-  <div class="project-content">
-    <h4>Pratique + Pilates</h4>
-    <p>
-    Um site moderno e responsivo para um estúdio de Pilates, com foco em acessibilidade, 
-    navegação intuitiva e uma experiência agradável para um público de diferentes idades.
-    O projeto foi pensado para facilitar o contato com o estúdio e apresentar seus serviços de forma clara e profissional.
-     A organização das informações, CTAs visíveis e um design limpo são pontos importantes para esse tipo de negócio.
-     </p>
-
-    <div class="project-tech">
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>Git</span>
-      <span>GitHub</span>
-    </div>
-
-<div class="project-links">
-  <a href="https://pratique-pilates.vercel.app/" target="_blank">Ver projeto</a>
-  <a href="https://github.com/kauanbg-dev/pratique-pilates" target="_blank">Ver código</a>
-</div>
-
-</div> 
-</article>
-
-</div> 
-</section>
-    
-    <section class="section objective">
-      <div class="section-title">
-        <span>Objetivo</span>
-        <h3>Minha meta profissional</h3>
-      </div>
-
-      <div class="about-card">
-        <p>
-          Busco minha primeira oportunidade como desenvolvedor para aplicar meus
-          conhecimentos, evoluir tecnicamente e contribuir com projetos reais,
-          criando soluções web modernas, úteis e bem estruturadas.
-        </p>
+        <article class="project-card" data-tilt>
+          <img src="./img/preview-pilates.png" data-i18n-alt="projects.pilatesAlt" alt="Site do estúdio Pratique + Pilates" />
+          <div class="project-content">
+            <h4>Pratique + Pilates</h4>
+            <p data-i18n="projects.pilates">
+              Site institucional para um estúdio: serviços claros, navegação
+              simples e CTAs visíveis para o público entrar em contato.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://pratique-pilates.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
+              <a class="ghost" href="https://github.com/kauanbg-dev/pratique-pilates" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Ver código</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
-<section id="curriculo" class="section">
-  <div class="section-title">
-    <span>Currículo</span>
-    <h3>Meu currículo profissional</h3>
-  </div>
 
-  <div class="resume-card">
-    <p>
-      Você pode visualizar ou baixar meu currículo completo com informações
-      sobre minha formação, experiências e habilidades técnicas.
-    </p>
-
-    <div class="resume-buttons">
-      <a href="./Curriculo_Kauan_Borges.pdf" target="_blank" class="btn primary">
-        Visualizar currículo
-      </a>
-
-      <a href="./Curriculo_Kauan_Borges.pdf" download class="btn secondary">
-        Baixar PDF
-      </a>
-    </div>
-  </div>
-</section>
-
-    <section id="contato" class="section">
+    <section id="curriculo" class="section" data-reveal>
       <div class="section-title">
-        <span>Contato</span>
-        <h3>Vamos nos conectar</h3>
+        <span data-i18n="resume.kicker">Currículo</span>
+        <h3 data-i18n="resume.title">Formação e experiência</h3>
+      </div>
+
+      <div class="resume-card">
+        <p data-i18n="resume.text">
+          Currículo com formação, stack e projetos. Use o PDF em processos
+          seletivos ou para uma leitura rápida do meu perfil.
+        </p>
+        <div class="resume-buttons">
+          <a href="./Curriculo_Kauan_Borges.pdf" target="_blank" rel="noopener noreferrer" class="btn primary" data-i18n="resume.view" data-resume-link>Visualizar currículo</a>
+          <a href="./Curriculo_Kauan_Borges.pdf" download="Curriculo_Kauan_Borges.pdf" class="btn secondary" data-i18n="resume.download" data-resume-link data-resume-download>Baixar PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section" data-reveal>
+      <div class="section-title">
+        <span data-i18n="contact.kicker">Contato</span>
+        <h3 data-i18n="contact.title">Vamos conversar</h3>
       </div>
 
       <div class="contact-grid">
-        <a href="https://github.com/kauanbg-dev" target="_blank" class="contact-card">
-          <strong>GitHub</strong>
-          <span>@kauanbg-dev</span>
+        <a href="https://github.com/kauanbg-dev" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <img src="./img/logo-github.svg" alt="" />
+          <div>
+            <strong>GitHub</strong>
+            <span>@kauanbg-dev</span>
+          </div>
         </a>
-
-        <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank" class="contact-card">
-          <strong>LinkedIn</strong>
-          <span>kauan-borges</span>
+        <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <img src="./img/logo-linkedin.svg" alt="" />
+          <div>
+            <strong>LinkedIn</strong>
+            <span>kauan-borges</span>
+          </div>
         </a>
-
-        <a href="mailto:seuemail@email.com" class="contact-card">
-          <strong>E-mail</strong>
-          <span>kauanbg.dev@gmail.com</span>
+        <a href="mailto:kauanbg.dev@gmail.com" class="contact-card">
+          <img src="./img/logo-email.svg" alt="" />
+          <div>
+            <strong data-i18n="contact.email">E-mail</strong>
+            <span>kauanbg.dev@gmail.com</span>
+          </div>
         </a>
-
-        <a href="https://www.instagram.com/eukauan.dev/" target="_blank" class="contact-card">
+        <a href="https://www.instagram.com/eukauan.dev/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <img src="./img/logo-instagram.svg" alt="" />
+          <div>
             <strong>Instagram</strong>
             <span>@eukauan.dev</span>
-        </a>     
-     </div>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Kauan Borges. Todos os direitos reservados.</p>
+    <p data-i18n="footer">© 2026 Kauan Borges. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/interactions.js"></script>
 </body>
 </html>
