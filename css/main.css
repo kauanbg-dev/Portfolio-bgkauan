@@ -299,6 +299,13 @@ main {
   transition: .3s;
 }
 
+.project-card img.preview-cover {
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  background: #101624;
+}
+
 .project-card:hover img {
   transform: scale(1.03);
 }
