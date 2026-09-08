@@ -82,7 +82,7 @@
             <span data-i18n="hero.stat2Label">tecnologias em uso nos projetos</span>
           </div>
           <div class="stat-card">
-            <strong>3</strong>
+            <strong>4</strong>
             <span data-i18n="hero.stat3Label">projetos publicados com código aberto</span>
           </div>
         </div>
@@ -107,6 +107,7 @@
         </p>
         <p data-i18n-html="about.p2">
           Meus trabalhos recentes incluem o
+          <a href="#projetos">Achei Buscador</a>, o
           <a href="#projetos">BgConverter</a>, o
           <a href="#projetos">BG Finance</a> e o site
           <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time,
@@ -140,7 +141,7 @@
         <article class="skill-card">
           <img src="./img/react-brands-solid-full.svg" alt="" />
           <h4>React</h4>
-          <p data-i18n="skills.react">Interfaces em componentes e estados para telas dinâmicas.</p>
+          <p data-i18n="skills.react">Interfaces em componentes e estados — como no Achei Buscador.</p>
         </article>
         <article class="skill-card">
           <img src="./img/logo-nodejs.svg" alt="" />
@@ -166,12 +167,31 @@
 
       <div class="projects-grid">
         <article class="project-card" data-tilt>
+          <img src="./img/preview-achei.png" data-i18n-alt="projects.acheiAlt" alt="Tela do Achei Buscador com CEP, feriados e bancos" />
+          <div class="project-content">
+            <h4>Achei Buscador</h4>
+            <p data-i18n="projects.achei">
+              Busca de CEP, calendário de feriados e consulta de bancos com a BrasilAPI. Feito em React, com histórico no navegador.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>BrasilAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://achei-buscador.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
+              <a class="ghost" href="https://github.com/kauanbg-dev/achei-buscador" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
           <img src="./img/preview-bgconverter.png" data-i18n-alt="projects.converterAlt" alt="Tela do conversor de moedas BgConverter" />
           <div class="project-content">
             <h4>BgConverter</h4>
             <p data-i18n="projects.converter">
-              Conversor de moedas com cotação em tempo real via API. Foco em
-              consumo de dados, layout responsivo e uso simples.
+              Conversor de câmbio com cotação ao vivo, várias moedas, histórico e cópia do resultado.
             </p>
             <div class="project-tech">
               <span>HTML</span>
@@ -180,7 +200,7 @@
               <span>API</span>
             </div>
             <div class="project-links">
-              <a href="https://bgconverter.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
+              <a href="https://bgconverter.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver projeto</a>
               <a class="ghost" href="https://github.com/kauanbg-dev/bgconverter" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Ver código</a>
             </div>
           </div>

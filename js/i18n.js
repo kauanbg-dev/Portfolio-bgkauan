@@ -30,7 +30,7 @@ const translations = {
       kicker: "Sobre mim",
       title: "Quem sou eu",
       p1: "Olá, eu sou Kauan Borges. Curso Ciência da Computação e desenvolvo produtos web do layout à lógica: sites institucionais, apps com API e um sistema financeiro com autenticação.",
-      p2: 'Meus trabalhos recentes incluem o <a href="#projetos">BgConverter</a>, o <a href="#projetos">BG Finance</a> e o site <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time, receber feedback e entregar interfaces úteis para pessoas reais.',
+      p2: 'Meus trabalhos recentes incluem o <a href="#projetos">Achei Buscador</a>, o <a href="#projetos">BgConverter</a>, o <a href="#projetos">BG Finance</a> e o site <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time, receber feedback e entregar interfaces úteis para pessoas reais.',
     },
     skills: {
       kicker: "Skills",
@@ -38,7 +38,7 @@ const translations = {
       html: "Estrutura semântica, acessibilidade básica e páginas bem organizadas.",
       css: "Layout responsivo, hierarquia visual e componentes reutilizáveis.",
       js: "Interatividade, consumo de APIs e lógica no front-end.",
-      react: "Interfaces em componentes e estados para telas dinâmicas.",
+      react: "Interfaces em componentes e estados — como no Achei Buscador.",
       node: "APIs, autenticação e backend para o BG Finance.",
       git: "Versionamento, publicação e histórico aberto dos projetos.",
     },
@@ -48,8 +48,11 @@ const translations = {
       view: "Ver projeto",
       code: "Ver código",
       converter:
-        "Conversor de moedas com cotação em tempo real via API. Foco em consumo de dados, layout responsivo e uso simples.",
+        "Conversor de câmbio com cotação ao vivo, várias moedas, histórico e cópia do resultado.",
       converterAlt: "Tela do conversor de moedas BgConverter",
+      achei:
+        "Busca de CEP, calendário de feriados e consulta de bancos com a BrasilAPI. Feito em React, com histórico no navegador.",
+      acheiAlt: "Tela do Achei Buscador com CEP, feriados e bancos",
       finance:
         "Controle de receitas e despesas com login, dashboard e fluxo de usuário. Stack de backend + front-end para um produto completo.",
       financeAlt: "Interface do sistema BG Finance",
@@ -104,7 +107,7 @@ const translations = {
       kicker: "About me",
       title: "Who I am",
       p1: "I’m Kauan Borges, a Computer Science student building web products from layout to logic: marketing sites, API-driven apps, and a finance system with authentication.",
-      p2: 'Recent work includes <a href="#projetos">BgConverter</a>, <a href="#projetos">BG Finance</a>, and <a href="#projetos">Pratique + Pilates</a>. I like growing with a team, getting feedback, and shipping useful interfaces.',
+      p2: 'Recent work includes <a href="#projetos">Achei Buscador</a>, <a href="#projetos">BgConverter</a>, <a href="#projetos">BG Finance</a>, and <a href="#projetos">Pratique + Pilates</a>. I like growing with a team, getting feedback, and shipping useful interfaces.',
     },
     skills: {
       kicker: "Skills",
@@ -112,7 +115,7 @@ const translations = {
       html: "Semantic structure, basic accessibility, and organized pages.",
       css: "Responsive layout, visual hierarchy, and reusable components.",
       js: "Interactivity, API consumption, and front-end logic.",
-      react: "Component-based UIs and state for dynamic screens.",
+      react: "Component-based UIs and state — as in Achei Buscador.",
       node: "APIs, authentication, and backend work on BG Finance.",
       git: "Version control, shipping, and public project history.",
     },
@@ -122,8 +125,11 @@ const translations = {
       view: "View project",
       code: "View code",
       converter:
-        "Currency converter with live rates from an external API. Built for data fetching, responsiveness, and a simple user flow.",
+        "Currency converter with live rates, multiple currencies, history, and a copy-to-clipboard result.",
       converterAlt: "BgConverter currency converter screen",
+      achei:
+        "ZIP code lookup, holiday calendar, and bank search via BrasilAPI. Built with React, with browser history.",
+      acheiAlt: "Achei Buscador screen with ZIP, holidays, and banks",
       finance:
         "Income and expense tracking with login, dashboard, and a full user flow. Front-end plus backend for a complete product.",
       financeAlt: "BG Finance app interface",
