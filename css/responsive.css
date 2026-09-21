@@ -121,6 +121,10 @@
 }
 
 @media (max-width: 430px) {
+  .logo span {
+    display: none;
+  }
+
   .nav-links a {
     font-size: 0.82rem;
     padding: 10px 4px;
