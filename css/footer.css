@@ -4,8 +4,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(11, 15, 25, 0.9);
-  color: #9fb0d1;
+  border-top: 1px solid var(--border);
+  background: var(--footer-bg);
+  color: var(--footer-text);
   font-size: 0.95rem;
+  transition: background .3s ease, color .3s ease, border-color .3s ease;
 }

@@ -1,0 +1,123 @@
+/* =========================
+   THEME TOKENS (DARK / LIGHT)
+========================= */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #0b0f19;
+  --glow-1: rgba(0, 224, 255, 0.12);
+  --glow-2: rgba(106, 90, 205, 0.15);
+  --spotlight: rgba(0, 224, 255, 0.09);
+
+  --text: #ffffff;
+  --heading: #ffffff;
+  --text-muted: #d4dcef;
+  --text-soft: #cfd7e8;
+  --text-dim: #bfc9df;
+  --nav-link: #d9e1f2;
+  --footer-text: #9fb0d1;
+
+  --accent: #00e0ff;
+  --accent-text: #00e0ff;
+  --accent-soft: #7fe9ff;
+  --on-accent: #081018;
+
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.05);
+  --surface-3: rgba(255, 255, 255, 0.03);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-2: rgba(255, 255, 255, 0.08);
+  --border-soft: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  --header-bg: rgba(11, 15, 25, 0.85);
+  --footer-bg: rgba(11, 15, 25, 0.9);
+  --img-bg: #0b0f19;
+  --img-bg-2: #101624;
+  --menu-bar: #ffffff;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #eef2f8;
+  --glow-1: rgba(0, 176, 210, 0.14);
+  --glow-2: rgba(106, 90, 205, 0.12);
+  --spotlight: rgba(0, 176, 210, 0.1);
+
+  --text: #16203a;
+  --heading: #0b1324;
+  --text-muted: #3c4763;
+  --text-soft: #47526e;
+  --text-dim: #566281;
+  --nav-link: #33405c;
+  --footer-text: #5a678a;
+
+  --accent: #00b8d9;
+  --accent-text: #0782a1;
+  --accent-soft: #0a93b5;
+  --on-accent: #06232c;
+
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-2: rgba(20, 40, 70, 0.06);
+  --surface-3: rgba(255, 255, 255, 0.6);
+  --border: rgba(20, 40, 70, 0.1);
+  --border-2: rgba(20, 40, 70, 0.12);
+  --border-soft: rgba(20, 40, 70, 0.12);
+  --border-strong: rgba(20, 40, 70, 0.16);
+
+  --header-bg: rgba(238, 242, 248, 0.85);
+  --footer-bg: rgba(238, 242, 248, 0.9);
+  --img-bg: #e6ecf5;
+  --img-bg-2: #dbe3f0;
+  --menu-bar: #16203a;
+}
+
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  color: var(--text-soft);
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--accent-text);
+  border-color: rgba(0, 224, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+/* The GitHub mark is a solid white glyph (for the dark theme), so it
+   disappears on the light background. Darken it only in light mode. */
+:root[data-theme="light"] img[src*="logo-github"] {
+  filter: invert(1);
+}

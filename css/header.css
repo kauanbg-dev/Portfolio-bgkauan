@@ -15,10 +15,10 @@ header {
     top: 0;
     z-index: 1000;
 
-    background: rgba(11, 15, 25, .85);
+    background: var(--header-bg);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,.06);
-    transition: padding .25s ease, box-shadow .25s ease;
+    border-bottom: 1px solid var(--border);
+    transition: padding .25s ease, box-shadow .25s ease, background .3s ease, border-color .3s ease;
 }
 
 .logo {
@@ -32,7 +32,7 @@ header {
     font-weight: 800;
     letter-spacing: 0.4px;
 
-    color: #00e0ff;
+    color: var(--accent-text);
     transition: transform .3s;
 }
 
@@ -60,7 +60,7 @@ header nav {
 
 .nav-links a {
     position: relative;
-    color: #d9e1f2;
+    color: var(--nav-link);
     font-size: 0.98rem;
     font-weight: 500;
     transition: color .3s;
@@ -68,7 +68,7 @@ header nav {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-    color: #00e0ff;
+    color: var(--accent-text);
 }
 
 .nav-links a::after {
@@ -78,7 +78,7 @@ header nav {
     bottom: -6px;
     width: 0;
     height: 2px;
-    background: #00e0ff;
+    background: var(--accent-text);
     transition: width .3s;
 }
 
@@ -87,15 +87,22 @@ header nav {
     width: 100%;
 }
 
-.lang-switch {
+.header-actions {
     grid-column: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-self: end;
+}
+
+.lang-switch {
     display: flex;
     align-items: center;
     gap: 6px;
     padding: 6px;
     border-radius: 12px;
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.08);
+    background: var(--surface-2);
+    border: 1px solid var(--border-2);
 }
 
 .lang {
@@ -104,7 +111,7 @@ header nav {
     font: inherit;
     font-size: .9rem;
     font-weight: 600;
-    color: #cfd7e8;
+    color: var(--text-soft);
     cursor: pointer;
     transition: .3s;
 }
@@ -112,11 +119,11 @@ header nav {
 .lang:hover,
 .lang:focus-visible {
     background: rgba(0,224,255,.1);
-    color: #00e0ff;
+    color: var(--accent-text);
 }
 
 .lang.active {
-    background: #00e0ff;
-    color: #081018;
+    background: var(--accent);
+    color: var(--on-accent);
 }
 

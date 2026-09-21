@@ -74,6 +74,9 @@ const translations = {
       title: "Vamos conversar",
       email: "E-mail",
     },
+    theme: {
+      toggle: "Alternar tema claro e escuro",
+    },
     footer: "© {year} Kauan Borges. Todos os direitos reservados.",
   },
   en: {
@@ -151,6 +154,9 @@ const translations = {
       title: "Let’s talk",
       email: "Email",
     },
+    theme: {
+      toggle: "Toggle light and dark theme",
+    },
     footer: "© {year} Kauan Borges. All rights reserved.",
   },
 };
@@ -204,6 +210,14 @@ function applyLang(lang) {
   document.querySelectorAll("[data-i18n-href]").forEach((el) => {
     const value = getByPath(dictionary, el.dataset.i18nHref);
     if (typeof value === "string") el.setAttribute("href", value);
+  });
+
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    const value = getByPath(dictionary, el.dataset.i18nAria);
+    if (typeof value === "string") {
+      el.setAttribute("aria-label", value);
+      el.setAttribute("title", value);
+    }
   });
 
   document.querySelectorAll("[data-resume-link]").forEach((el) => {

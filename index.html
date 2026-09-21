@@ -14,6 +14,19 @@
   <meta property="og:image" content="https://portifolio-bgkauan.vercel.app/img/perfil.jpg" />
   <link rel="icon" href="./img/logo-bg-iluminada.png" type="image/png" />
 
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved === "light" || saved === "dark"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        if (theme === "light") document.documentElement.setAttribute("data-theme", "light");
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="./css/theme.css" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -43,9 +56,21 @@
       </div>
     </nav>
 
-    <div class="lang-switch" role="group" aria-label="Idioma">
-      <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
-      <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" data-i18n-aria="theme.toggle" aria-label="Alternar tema claro e escuro" title="Alternar tema claro e escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -303,6 +328,7 @@
     <p data-i18n="footer">© 2026 Kauan Borges. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="./js/theme.js"></script>
   <script src="./js/i18n.js"></script>
   <script src="./js/interactions.js"></script>
 </body>
