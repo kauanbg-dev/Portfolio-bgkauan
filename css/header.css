@@ -5,11 +5,11 @@
 header {
     width: 100%;
     padding: 16px 4%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 12px;
-    flex-wrap: nowrap;
+    column-gap: 16px;
+    row-gap: 8px;
 
     position: sticky;
     top: 0;
@@ -22,6 +22,8 @@ header {
 }
 
 .logo {
+    grid-column: 1;
+    min-width: 0;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,10 +47,9 @@ header {
 }
 
 header nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-shrink: 0;
+    grid-column: 2;
+    justify-self: end;
+    min-width: 0;
 }
 
 .nav-links {
@@ -87,6 +88,7 @@ header nav {
 }
 
 .lang-switch {
+    grid-column: 3;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -118,22 +120,3 @@ header nav {
     color: #081018;
 }
 
-.menu-toggle {
-    display: none;
-    width: 44px;
-    height: 44px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,.1);
-}
-
-.menu-toggle span {
-    display: block;
-    width: 18px;
-    height: 2px;
-    background: #fff;
-    border-radius: 2px;
-}

@@ -42,6 +42,7 @@ main {
 
 .section {
   margin-top: 88px;
+  scroll-margin-top: 96px;
 }
 
 .section-title {

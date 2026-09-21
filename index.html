@@ -34,26 +34,19 @@
       <span>Kauan Borges</span>
     </a>
 
-    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only" data-i18n="menu">Abrir menu</span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav id="site-nav" data-nav>
+    <nav id="site-nav" aria-label="Seções">
       <div class="nav-links">
         <a href="#sobre" data-i18n="nav.about">Sobre</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#projetos" data-i18n="nav.projects">Projetos</a>
         <a href="#contato" data-i18n="nav.contact">Contato</a>
       </div>
-
-      <div class="lang-switch" role="group" aria-label="Idioma">
-        <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
-        <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
-      </div>
     </nav>
+
+    <div class="lang-switch" role="group" aria-label="Idioma">
+      <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+    </div>
   </header>
 
   <main id="conteudo">
@@ -311,7 +304,6 @@
   </footer>
 
   <script src="./js/i18n.js"></script>
-  <script src="./js/main.js"></script>
   <script src="./js/interactions.js"></script>
 </body>
 </html>
