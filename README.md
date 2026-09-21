@@ -6,6 +6,14 @@ Site pessoal com projetos, stack e currículo.
 
 ## Projetos
 
+### Bala de Munich
+
+Site do time na Super Copa dos Streamers.
+
+[Site](https://balademunich.vercel.app/) · [Código](https://github.com/kauanbg-dev/bala-de-munich)
+
+![Bala de Munich](./img/preview-munich.png)
+
 ### Achei Buscador
 
 CEP, feriados e bancos com React e BrasilAPI.

@@ -30,7 +30,7 @@ const translations = {
       kicker: "Sobre mim",
       title: "Quem sou eu",
       p1: "Olá, eu sou Kauan Borges. Curso Ciência da Computação e desenvolvo produtos web do layout à lógica: sites institucionais, apps com API e um sistema financeiro com autenticação.",
-      p2: 'Meus trabalhos recentes incluem o <a href="#projetos">Achei Buscador</a>, o <a href="#projetos">BgConverter</a>, o <a href="#projetos">BG Finance</a> e o site <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time, receber feedback e entregar interfaces úteis para pessoas reais.',
+      p2: 'Meus trabalhos recentes incluem o <a href="#projetos">Bala de Munich</a>, o <a href="#projetos">Achei Buscador</a>, o <a href="#projetos">BgConverter</a>, o <a href="#projetos">BG Finance</a> e o site <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time, receber feedback e entregar interfaces úteis para pessoas reais.',
     },
     skills: {
       kicker: "Skills",
@@ -59,6 +59,9 @@ const translations = {
       pilates:
         "Site institucional para um estúdio: serviços claros, navegação simples e CTAs visíveis para o público entrar em contato.",
       pilatesAlt: "Site do estúdio Pratique + Pilates",
+      munich:
+        "Site do time na Super Copa dos Streamers: elenco, tabela, chave de confrontos, stats, votação de MVP e lives.",
+      munichAlt: "Chave de confrontos do site Bala de Munich",
     },
     resume: {
       kicker: "Currículo",
@@ -110,7 +113,7 @@ const translations = {
       kicker: "About me",
       title: "Who I am",
       p1: "I’m Kauan Borges, a Computer Science student building web products from layout to logic: marketing sites, API-driven apps, and a finance system with authentication.",
-      p2: 'Recent work includes <a href="#projetos">Achei Buscador</a>, <a href="#projetos">BgConverter</a>, <a href="#projetos">BG Finance</a>, and <a href="#projetos">Pratique + Pilates</a>. I like growing with a team, getting feedback, and shipping useful interfaces.',
+      p2: 'Recent work includes <a href="#projetos">Bala de Munich</a>, <a href="#projetos">Achei Buscador</a>, <a href="#projetos">BgConverter</a>, <a href="#projetos">BG Finance</a>, and <a href="#projetos">Pratique + Pilates</a>. I like growing with a team, getting feedback, and shipping useful interfaces.',
     },
     skills: {
       kicker: "Skills",
@@ -139,6 +142,9 @@ const translations = {
       pilates:
         "Institutional site for a Pilates studio: clear services, simple navigation, and visible CTAs so visitors can get in touch.",
       pilatesAlt: "Pratique + Pilates studio website",
+      munich:
+        "Club site for Bala de Munich in Super Copa dos Streamers: roster, standings, playoff bracket, stats, MVP voting, and live streams.",
+      munichAlt: "Bala de Munich playoff bracket screen",
     },
     resume: {
       kicker: "Resume",
