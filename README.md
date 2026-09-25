@@ -42,6 +42,14 @@ Receitas, despesas e autenticação.
 
 ![BG Finance](./img/preview-bgfinance.png)
 
+### A Dois
+
+Caderno do casal: saídas, quem pagou e sync nos dois celulares.
+
+[Site](https://adois-chi.vercel.app/) · [Código](https://github.com/kauanbg-dev/adois)
+
+![A Dois](./img/preview-adois.png)
+
 ### Pratique + Pilates
 
 Site institucional do estúdio.

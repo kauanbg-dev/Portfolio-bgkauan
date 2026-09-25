@@ -98,6 +98,9 @@ const translations = {
       munich:
         "Site do time na Super Copa dos Streamers: elenco, tabela, chave de confrontos, stats, votação de MVP e lives.",
       munichAlt: "Chave de confrontos do site Bala de Munich",
+      adois:
+        "Caderno compartilhado do casal: anota as saídas, quem pagou e sincroniza nos dois celulares.",
+      adoisAlt: "Tela do A Dois com resumo mensal do casal",
     },
     resume: {
       kicker: "Currículo",
@@ -217,6 +220,9 @@ const translations = {
       munich:
         "Club site for Bala de Munich in Super Copa dos Streamers: roster, standings, playoff bracket, stats, MVP voting, and live streams.",
       munichAlt: "Bala de Munich playoff bracket screen",
+      adois:
+        "Shared notebook for a couple: log outings, who paid, and sync across both phones.",
+      adoisAlt: "A Dois monthly summary screen for the couple",
     },
     resume: {
       kicker: "Resume",
