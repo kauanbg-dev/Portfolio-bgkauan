@@ -23,6 +23,14 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-tech {
+    min-height: 0;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 860px) {

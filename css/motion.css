@@ -72,7 +72,7 @@ header.is-scrolled {
 
 .project-card {
   content-visibility: auto;
-  contain-intrinsic-size: 420px;
+  contain-intrinsic-size: 560px;
 }
 
 .hero-image img {
