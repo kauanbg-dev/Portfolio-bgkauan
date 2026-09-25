@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kauan Borges | Portfólio</title>
-  <meta name="description" content="Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor web em formação. Projetos com HTML, CSS, JavaScript, React e Node.js." />
+  <meta name="description" content="Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor front-end. Projetos com HTML, CSS, JavaScript, React e Node.js." />
   <meta name="theme-color" content="#0b0f19" />
   <link rel="canonical" href="https://portifolio-bgkauan.vercel.app/" />
   <meta property="og:title" content="Kauan Borges | Portfólio" />
@@ -47,9 +47,24 @@
       <span>Kauan Borges</span>
     </a>
 
+    <button
+      type="button"
+      class="nav-toggle"
+      data-nav-toggle
+      aria-controls="site-nav"
+      aria-expanded="false"
+      data-i18n-aria="menu"
+      aria-label="Abrir menu"
+    >
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+
     <nav id="site-nav" aria-label="Seções">
       <div class="nav-links">
         <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#experiencia" data-i18n="nav.experience">Carreira</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#projetos" data-i18n="nav.projects">Projetos</a>
         <a href="#contato" data-i18n="nav.contact">Contato</a>
@@ -79,11 +94,11 @@
       <div class="hero-text">
         <span class="tag" data-i18n="hero.tag">Portfólio de Desenvolvedor</span>
         <h1>Kauan Borges</h1>
-        <h2 data-i18n="hero.role">Desenvolvedor web em formação</h2>
+        <h2 data-i18n="hero.role">Desenvolvedor Front-end</h2>
         <p data-i18n="hero.text">
-          Estudante de Ciência da Computação no 5º período. Construo interfaces
-          claras, responsivas e funcionais — e já publico projetos com HTML, CSS,
-          JavaScript, React e Node.js.
+          Estou no 5º período de Ciência da Computação. Faço sites e apps web
+          com HTML, CSS, JavaScript, React e Node.js, responsivos no celular e
+          no computador.
         </p>
         <div class="hero-buttons">
           <a href="#projetos" class="btn primary" data-i18n="hero.projects">Ver projetos</a>
@@ -119,20 +134,104 @@
 
       <div class="about-card">
         <p data-i18n="about.p1">
-          Olá, eu sou Kauan Borges. Curso Ciência da Computação e desenvolvo
-          produtos web do layout à lógica: sites institucionais, apps com API e
-          um sistema financeiro com autenticação.
-        </p>
-        <p data-i18n-html="about.p2">
-          Meus trabalhos recentes incluem o
-          <a href="#projetos">Bala de Munich</a>, o
-          <a href="#projetos">Achei Buscador</a>, o
-          <a href="#projetos">BgConverter</a>, o
-          <a href="#projetos">BG Finance</a> e o site
-          <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time,
-          receber feedback e entregar interfaces úteis para pessoas reais.
+          Olá, eu sou o Kauan. Estudo Ciência da Computação e gosto de pegar uma
+          ideia e transformar em site ou sistema de verdade: do visual até a
+          parte que faz tudo funcionar.
         </p>
       </div>
+    </section>
+
+    <section id="experiencia" class="section" data-reveal>
+      <div class="section-title">
+        <span data-i18n="experience.kicker">Carreira</span>
+        <h3 data-i18n="experience.title">Experiência profissional</h3>
+      </div>
+
+      <p class="experience-intro" data-i18n="experience.intro">
+        Um resumo do que estou fazendo agora e das experiências que tive.
+      </p>
+
+      <ol class="experience-timeline">
+        <li class="experience-item is-current">
+          <div class="experience-marker" aria-hidden="true"></div>
+          <article class="experience-card">
+            <div class="experience-header">
+              <img class="experience-logo" src="./img/logo-prefeitura-rio.png" alt="" width="72" height="72" />
+              <div class="experience-heading">
+                <div class="experience-meta">
+                  <span class="experience-badge" data-i18n="experience.currentBadge">Atual</span>
+                  <span class="experience-period" data-i18n="experience.job1.period">Em andamento</span>
+                </div>
+                <h4 data-i18n="experience.job1.role">Estagiário Front-end</h4>
+                <p class="experience-org" data-i18n="experience.job1.org">Prefeitura do Rio de Janeiro</p>
+              </div>
+            </div>
+            <p data-i18n="experience.job1.summary">
+              Estágio de front-end no portal web da Receita Municipal: desenvolvo e
+              melhoro as telas que a equipe usa no dia a dia.
+            </p>
+            <ul class="experience-points">
+              <li data-i18n="experience.job1.point1">
+                Evoluo interfaces em HTML, CSS e JavaScript — layout, usabilidade e
+                correção de bugs nas telas do sistema.
+              </li>
+              <li data-i18n="experience.job1.point2">
+                Integro as telas com as APIs do backend e cuido de pontos de
+                segurança no front, como prevenção de XSS.
+              </li>
+              <li data-i18n="experience.job1.point3">
+                Trabalho em time com Git: branch, commit, pull request e revisão
+                de código.
+              </li>
+            </ul>
+          </article>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-marker" aria-hidden="true"></div>
+          <article class="experience-card">
+            <div class="experience-meta">
+              <span class="experience-badge muted" data-i18n="experience.pastBadge">Anterior</span>
+              <span class="experience-period" data-i18n="experience.job2.period">Fev 2025 — Jul 2025</span>
+            </div>
+            <h4 data-i18n="experience.job2.role">Suporte técnico</h4>
+            <p class="experience-org" data-i18n="experience.job2.org">Barbearia Ascenção</p>
+            <p data-i18n="experience.job2.summary">
+              Cuidava da parte digital da barbearia: sistemas de agendamento, site
+              e o dia a dia das ferramentas de TI usadas pela equipe.
+            </p>
+            <ul class="experience-points">
+              <li data-i18n="experience.job2.point1">
+                Suporte técnico no AppBarber e nos sistemas de agendamento, para o
+                atendimento continuar fluindo.
+              </li>
+              <li data-i18n="experience.job2.point2">
+                Atualização e manutenção do site da barbearia.
+              </li>
+              <li data-i18n="experience.job2.point3">
+                Apoio em demandas de TI no dia a dia, deixando as ferramentas
+                digitais estáveis para o time.
+              </li>
+            </ul>
+          </article>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-marker" aria-hidden="true"></div>
+          <article class="experience-card">
+            <div class="experience-meta">
+              <span class="experience-badge muted" data-i18n="experience.educationBadge">Formação</span>
+              <span class="experience-period" data-i18n="experience.edu.period">5º período</span>
+            </div>
+            <h4 data-i18n="experience.edu.role">Ciência da Computação</h4>
+            <p class="experience-org" data-i18n="experience.edu.org">Graduação em andamento</p>
+            <p data-i18n="experience.edu.summary">
+              Base em lógica, programação e engenharia de software — aplicada nos
+              projetos públicos do portfólio e no estágio de front-end.
+            </p>
+          </article>
+        </li>
+      </ol>
     </section>
 
     <section id="skills" class="section" data-reveal>
@@ -141,51 +240,39 @@
         <h3 data-i18n="skills.title">Tecnologias que utilizo</h3>
       </div>
 
-      <div class="skills-grid">
-        <article class="skill-card">
-          <img src="./img/logo-html-5-.png" alt="" />
-          <h4>HTML5</h4>
-          <p data-i18n="skills.html">Estrutura semântica, acessibilidade básica e páginas bem organizadas.</p>
-        </article>
-        <article class="skill-card">
-          <img src="./img/logo-css-.png" alt="" />
-          <h4>CSS3</h4>
-          <p data-i18n="skills.css">Layout responsivo, hierarquia visual e componentes reutilizáveis.</p>
-        </article>
-        <article class="skill-card">
-          <img src="./img/logo-javascript-.png" alt="" />
-          <h4>JavaScript</h4>
-          <p data-i18n="skills.js">Interatividade, consumo de APIs e lógica no front-end.</p>
-        </article>
-        <article class="skill-card">
-          <img src="./img/react-brands-solid-full.svg" alt="" />
-          <h4>React</h4>
-          <p data-i18n="skills.react">Interfaces em componentes e estados — como no Achei Buscador.</p>
-        </article>
-        <article class="skill-card">
-          <img src="./img/logo-nodejs.svg" alt="" />
-          <h4>Node.js</h4>
-          <p data-i18n="skills.node">APIs, autenticação e backend para o BG Finance.</p>
-        </article>
-        <article class="skill-card">
-          <div class="skill-icons">
-            <img src="./img/logo-git.svg" alt="" />
-            <img src="./img/logo-github.svg" alt="" />
-          </div>
-          <h4>Git &amp; GitHub</h4>
-          <p data-i18n="skills.git">Versionamento, publicação e histórico aberto dos projetos.</p>
-        </article>
+      <div class="skills-row">
+        <div class="skill-item" title="HTML5">
+          <img src="./img/logo-html-5-.png" alt="HTML5" />
+        </div>
+        <div class="skill-item" title="CSS3">
+          <img src="./img/logo-css-.png" alt="CSS3" />
+        </div>
+        <div class="skill-item" title="JavaScript">
+          <img src="./img/logo-javascript-.png" alt="JavaScript" />
+        </div>
+        <div class="skill-item" title="React">
+          <img src="./img/react-brands-solid-full.svg" alt="React" />
+        </div>
+        <div class="skill-item" title="Node.js">
+          <img src="./img/logo-nodejs.svg" alt="Node.js" />
+        </div>
+        <div class="skill-item" title="Git">
+          <img src="./img/logo-git.svg" alt="Git" />
+        </div>
+        <div class="skill-item" title="GitHub">
+          <img src="./img/logo-github.svg" alt="GitHub" />
+        </div>
       </div>
     </section>
 
-    <section id="projetos" class="section" data-reveal>
-      <div class="section-title">
+    <section id="projetos" class="section">
+      <div class="section-title" data-reveal>
         <span data-i18n="projects.kicker">Projetos</span>
         <h3 data-i18n="projects.title">Trabalhos em destaque</h3>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card" data-tilt>
+        <article class="project-card" data-tilt data-reveal="project">
           <img class="preview-cover" src="./img/preview-munich.png" data-i18n-alt="projects.munichAlt" alt="Chave de confrontos do site Bala de Munich" />
           <div class="project-content">
             <h4>Bala de Munich</h4>
@@ -205,7 +292,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-tilt>
+        <article class="project-card" data-tilt data-reveal="project">
           <img src="./img/preview-achei.png" data-i18n-alt="projects.acheiAlt" alt="Tela do Achei Buscador com CEP, feriados e bancos" />
           <div class="project-content">
             <h4>Achei Buscador</h4>
@@ -225,7 +312,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-tilt>
+        <article class="project-card" data-tilt data-reveal="project">
           <img src="./img/preview-bgconverter.png" data-i18n-alt="projects.converterAlt" alt="Tela do conversor de moedas BgConverter" />
           <div class="project-content">
             <h4>BgConverter</h4>
@@ -245,7 +332,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-tilt>
+        <article class="project-card" data-tilt data-reveal="project">
           <img class="preview-cover" src="./img/preview-bgfinance.png" data-i18n-alt="projects.financeAlt" alt="Interface do sistema BG Finance" />
           <div class="project-content">
             <h4>BG Finance</h4>
@@ -266,7 +353,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-tilt>
+        <article class="project-card" data-tilt data-reveal="project">
           <img class="preview-cover" src="./img/preview-pilates.png" data-i18n-alt="projects.pilatesAlt" alt="Site do estúdio Pratique + Pilates" />
           <div class="project-content">
             <h4>Pratique + Pilates</h4>

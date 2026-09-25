@@ -31,7 +31,9 @@
   --border-soft: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.12);
 
-  --header-bg: rgba(11, 15, 25, 0.85);
+  --header-bg-rgb: 11, 15, 25;
+  --header-alpha: 0.9;
+  --header-bg: rgba(var(--header-bg-rgb), var(--header-alpha));
   --footer-bg: rgba(11, 15, 25, 0.9);
   --img-bg: #0b0f19;
   --img-bg-2: #101624;
@@ -67,7 +69,9 @@
   --border-soft: rgba(20, 40, 70, 0.12);
   --border-strong: rgba(20, 40, 70, 0.16);
 
-  --header-bg: rgba(238, 242, 248, 0.85);
+  --header-bg-rgb: 238, 242, 248;
+  --header-alpha: 0.9;
+  --header-bg: rgba(var(--header-bg-rgb), var(--header-alpha));
   --footer-bg: rgba(238, 242, 248, 0.9);
   --img-bg: #e6ecf5;
   --img-bg-2: #dbe3f0;

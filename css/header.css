@@ -15,10 +15,16 @@ header {
     top: 0;
     z-index: 1000;
 
-    background: var(--header-bg);
-    backdrop-filter: blur(12px);
+    background: rgba(var(--header-bg-rgb), var(--header-alpha));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
-    transition: padding .25s ease, box-shadow .25s ease, background .3s ease, border-color .3s ease;
+    transition:
+      padding .25s ease,
+      box-shadow .25s ease,
+      background .2s ease,
+      border-color .3s ease,
+      backdrop-filter .25s ease;
 }
 
 .logo {
@@ -93,6 +99,48 @@ header nav {
     align-items: center;
     gap: 8px;
     justify-self: end;
+}
+
+.nav-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid var(--border-2);
+    border-radius: 12px;
+    background: var(--surface-2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+    border-color: rgba(0, 224, 255, 0.28);
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--menu-bar);
+    transition: transform .25s ease, opacity .2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 .lang-switch {

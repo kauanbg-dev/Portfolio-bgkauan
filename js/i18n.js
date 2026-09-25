@@ -3,12 +3,14 @@ const translations = {
     meta: {
       title: "Kauan Borges | Portfólio",
       description:
-        "Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor web em formação. Projetos com HTML, CSS, JavaScript, React e Node.js.",
+        "Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor front-end. Projetos com HTML, CSS, JavaScript, React e Node.js.",
     },
     skip: "Pular para o conteúdo",
     menu: "Abrir menu",
+    menuClose: "Fechar menu",
     nav: {
       about: "Sobre",
+      experience: "Carreira",
       skills: "Skills",
       projects: "Projetos",
       contact: "Contato",
@@ -16,8 +18,8 @@ const translations = {
     },
     hero: {
       tag: "Portfólio de Desenvolvedor",
-      role: "Desenvolvedor web em formação",
-      text: "Estudante de Ciência da Computação no 5º período. Construo interfaces claras, responsivas e funcionais — e já publico projetos com HTML, CSS, JavaScript, React e Node.js.",
+      role: "Desenvolvedor Front-end",
+      text: "Estou no 5º período de Ciência da Computação. Faço sites e apps web com HTML, CSS, JavaScript, React e Node.js, responsivos no celular e no computador.",
       projects: "Ver projetos",
       contact: "Falar comigo",
       stat1: "5º",
@@ -29,18 +31,51 @@ const translations = {
     about: {
       kicker: "Sobre mim",
       title: "Quem sou eu",
-      p1: "Olá, eu sou Kauan Borges. Curso Ciência da Computação e desenvolvo produtos web do layout à lógica: sites institucionais, apps com API e um sistema financeiro com autenticação.",
-      p2: 'Meus trabalhos recentes incluem o <a href="#projetos">Bala de Munich</a>, o <a href="#projetos">Achei Buscador</a>, o <a href="#projetos">BgConverter</a>, o <a href="#projetos">BG Finance</a> e o site <a href="#projetos">Pratique + Pilates</a>. Gosto de evoluir em time, receber feedback e entregar interfaces úteis para pessoas reais.',
+      p1: "Olá, eu sou o Kauan. Estudo Ciência da Computação e gosto de pegar uma ideia e transformar em site ou sistema de verdade: do visual até a parte que faz tudo funcionar.",
+    },
+    experience: {
+      kicker: "Carreira",
+      title: "Experiência profissional",
+      intro: "Um resumo do que estou fazendo agora e das experiências que tive.",
+      currentBadge: "Atual",
+      pastBadge: "Anterior",
+      educationBadge: "Formação",
+      job1: {
+        period: "Em andamento",
+        role: "Estagiário Front-end",
+        org: "Prefeitura do Rio de Janeiro",
+        summary:
+          "Estágio de front-end no portal web da Receita Municipal: desenvolvo e melhoro as telas que a equipe usa no dia a dia.",
+        point1:
+          "Evoluo interfaces em HTML, CSS e JavaScript — layout, usabilidade e correção de bugs nas telas do sistema.",
+        point2:
+          "Integro as telas com as APIs do backend e cuido de pontos de segurança no front, como prevenção de XSS.",
+        point3:
+          "Trabalho em time com Git: branch, commit, pull request e revisão de código.",
+      },
+      job2: {
+        period: "Fev 2025 — Jul 2025",
+        role: "Suporte técnico",
+        org: "Barbearia Ascenção",
+        summary:
+          "Cuidava da parte digital da barbearia: sistemas de agendamento, site e o dia a dia das ferramentas de TI usadas pela equipe.",
+        point1:
+          "Suporte técnico no AppBarber e nos sistemas de agendamento, para o atendimento continuar fluindo.",
+        point2: "Atualização e manutenção do site da barbearia.",
+        point3:
+          "Apoio em demandas de TI no dia a dia, deixando as ferramentas digitais estáveis para o time.",
+      },
+      edu: {
+        period: "5º período",
+        role: "Ciência da Computação",
+        org: "Graduação em andamento",
+        summary:
+          "Base em lógica, programação e engenharia de software — aplicada nos projetos públicos do portfólio e no estágio de front-end.",
+      },
     },
     skills: {
       kicker: "Skills",
       title: "Tecnologias que utilizo",
-      html: "Estrutura semântica, acessibilidade básica e páginas bem organizadas.",
-      css: "Layout responsivo, hierarquia visual e componentes reutilizáveis.",
-      js: "Interatividade, consumo de APIs e lógica no front-end.",
-      react: "Interfaces em componentes e estados — como no Achei Buscador.",
-      node: "APIs, autenticação e backend para o BG Finance.",
-      git: "Versionamento, publicação e histórico aberto dos projetos.",
     },
     projects: {
       kicker: "Projetos",
@@ -86,12 +121,14 @@ const translations = {
     meta: {
       title: "Kauan Borges | Portfolio",
       description:
-        "Portfolio of Kauan Borges, Computer Science student and web developer in training. Projects with HTML, CSS, JavaScript, React, and Node.js.",
+        "Portfolio of Kauan Borges, Computer Science student and frontend developer. Projects with HTML, CSS, JavaScript, React, and Node.js.",
     },
     skip: "Skip to content",
     menu: "Open menu",
+    menuClose: "Close menu",
     nav: {
       about: "About",
+      experience: "Experience",
       skills: "Skills",
       projects: "Projects",
       contact: "Contact",
@@ -99,8 +136,8 @@ const translations = {
     },
     hero: {
       tag: "Developer Portfolio",
-      role: "Web developer in training",
-      text: "Computer Science student in the 5th semester. I build clear, responsive interfaces — and ship projects with HTML, CSS, JavaScript, React, and Node.js.",
+      role: "Frontend Developer",
+      text: "I’m in the 5th semester of Computer Science. I build websites and web apps with HTML, CSS, JavaScript, React, and Node.js, responsive on phone and desktop.",
       projects: "View projects",
       contact: "Email me",
       stat1: "5th",
@@ -112,18 +149,51 @@ const translations = {
     about: {
       kicker: "About me",
       title: "Who I am",
-      p1: "I’m Kauan Borges, a Computer Science student building web products from layout to logic: marketing sites, API-driven apps, and a finance system with authentication.",
-      p2: 'Recent work includes <a href="#projetos">Bala de Munich</a>, <a href="#projetos">Achei Buscador</a>, <a href="#projetos">BgConverter</a>, <a href="#projetos">BG Finance</a>, and <a href="#projetos">Pratique + Pilates</a>. I like growing with a team, getting feedback, and shipping useful interfaces.',
+      p1: "Hey, I’m Kauan. I study Computer Science and I like taking an idea and turning it into a real website or system, from the look of it to the part that makes it work.",
+    },
+    experience: {
+      kicker: "Career",
+      title: "Professional experience",
+      intro: "A quick look at what I’m doing now and the roles I’ve held.",
+      currentBadge: "Current",
+      pastBadge: "Previous",
+      educationBadge: "Education",
+      job1: {
+        period: "Ongoing",
+        role: "Frontend Intern",
+        org: "City of Rio de Janeiro (Prefeitura do Rio)",
+        summary:
+          "Frontend internship on the Municipal Revenue web portal: I build and improve the screens the team uses day to day.",
+        point1:
+          "I evolve interfaces in HTML, CSS, and JavaScript — layout, usability, and bug fixes across system screens.",
+        point2:
+          "I connect screens to backend APIs and harden frontend security points, such as XSS prevention.",
+        point3:
+          "I work with the team on Git: branches, commits, pull requests, and code review.",
+      },
+      job2: {
+        period: "Feb 2025 — Jul 2025",
+        role: "Technical Support",
+        org: "Barbearia Ascenção",
+        summary:
+          "I handled the barbershop’s digital side: booking systems, the website, and day-to-day IT tools used by the team.",
+        point1:
+          "Technical support for AppBarber and booking systems so appointments kept running smoothly.",
+        point2: "Updates and maintenance of the barbershop website.",
+        point3:
+          "Day-to-day IT support, keeping digital tools stable for the team.",
+      },
+      edu: {
+        period: "5th semester",
+        role: "Computer Science",
+        org: "Undergraduate degree in progress",
+        summary:
+          "Foundation in logic, programming, and software engineering — applied in public portfolio projects and the frontend internship.",
+      },
     },
     skills: {
       kicker: "Skills",
       title: "Technologies I use",
-      html: "Semantic structure, basic accessibility, and organized pages.",
-      css: "Responsive layout, visual hierarchy, and reusable components.",
-      js: "Interactivity, API consumption, and front-end logic.",
-      react: "Component-based UIs and state — as in Achei Buscador.",
-      node: "APIs, authentication, and backend work on BG Finance.",
-      git: "Version control, shipping, and public project history.",
     },
     projects: {
       kicker: "Projects",

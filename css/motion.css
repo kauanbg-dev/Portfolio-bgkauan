@@ -12,16 +12,22 @@
 }
 
 .has-motion main,
-.has-motion header,
 .has-motion footer {
   position: relative;
   z-index: 1;
 }
 
+.has-motion header {
+  z-index: 1000;
+}
+
 header.is-scrolled {
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  border-bottom-color: transparent;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .nav-links a.is-active {
@@ -43,6 +49,22 @@ header.is-scrolled {
 [data-reveal].is-in {
   opacity: 1;
   transform: none;
+}
+
+[data-reveal="project"] {
+  opacity: 0;
+  transform: translateY(36px) scale(0.94);
+  filter: blur(6px);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms),
+    filter 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms);
+}
+
+[data-reveal="project"].is-in {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
 }
 
 .hero-image img {
@@ -88,13 +110,13 @@ header.is-scrolled {
   transition: transform 0.55s ease;
 }
 
-.skill-card,
+.skill-item,
 .contact-card,
 .stat-card {
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-card:hover,
+.skill-item:hover,
 .contact-card:hover,
 .stat-card:hover {
   box-shadow: 0 12px 30px rgba(0, 224, 255, 0.08);
@@ -110,9 +132,11 @@ header.is-scrolled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-reveal] {
+  [data-reveal],
+  [data-reveal="project"] {
     opacity: 1;
     transform: none;
+    filter: none;
   }
 
   .has-motion .hero-image img {

@@ -2,9 +2,56 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 
 const header = document.querySelector("header");
 if (header) {
-  const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 12);
+  const onScroll = () => {
+    const y = window.scrollY;
+    header.classList.toggle("is-scrolled", y > 10);
+
+    // No topo mais sólido; descendo fica mais transparente (no mobile, menos extremo)
+    const t = Math.min(Math.max(y / 220, 0), 1);
+    const isMobile = window.matchMedia("(max-width: 860px)").matches;
+    const minAlpha = isMobile ? 0.78 : 0.38;
+    const alpha = (0.9 - t * (0.9 - minAlpha)).toFixed(3);
+    header.style.setProperty("--header-alpha", alpha);
+  };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+}
+
+const navToggle = document.querySelector("[data-nav-toggle]");
+const siteNav = document.querySelector("#site-nav");
+if (header && navToggle && siteNav) {
+  const setNavOpen = (open) => {
+    header.classList.toggle("nav-open", open);
+    navToggle.setAttribute("aria-expanded", String(open));
+    const lang = localStorage.getItem("lang") === "en" ? "en" : "pt";
+    const label =
+      open
+        ? (lang === "en" ? "Close menu" : "Fechar menu")
+        : (lang === "en" ? "Open menu" : "Abrir menu");
+    navToggle.setAttribute("aria-label", label);
+    navToggle.setAttribute("title", label);
+  };
+
+  navToggle.addEventListener("click", () => {
+    setNavOpen(!header.classList.contains("nav-open"));
+  });
+
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setNavOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setNavOpen(false);
+  });
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (!window.matchMedia("(max-width: 860px)").matches) setNavOpen(false);
+    },
+    { passive: true }
+  );
 }
 
 if (!reduceMotion) {
@@ -23,7 +70,12 @@ if (!reduceMotion) {
   spotlight();
 
   document.querySelectorAll("[data-reveal]").forEach((el, index) => {
+    if (el.getAttribute("data-reveal") === "project") return;
     el.style.setProperty("--delay", `${Math.min(index * 60, 240)}ms`);
+  });
+
+  document.querySelectorAll('[data-reveal="project"]').forEach((el, index) => {
+    el.style.setProperty("--delay", `${index * 110}ms`);
   });
 
   const reveal = new IntersectionObserver(
@@ -35,7 +87,7 @@ if (!reduceMotion) {
         }
       });
     },
-    { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.14, rootMargin: "0px 0px -6% 0px" }
   );
 
   document.querySelectorAll("[data-reveal]").forEach((el) => reveal.observe(el));
