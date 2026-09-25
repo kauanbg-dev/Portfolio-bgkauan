@@ -5,10 +5,18 @@
   pointer-events: none;
   z-index: 0;
   background: radial-gradient(
-    520px circle at var(--mx, 50%) var(--my, 20%),
+    420px circle at var(--mx, 50%) var(--my, 20%),
     var(--spotlight),
-    transparent 42%
+    transparent 40%
   );
+  will-change: background;
+  contain: strict;
+}
+
+@media (max-width: 860px), (hover: none) {
+  .has-motion body::before {
+    display: none;
+  }
 }
 
 .has-motion main,
@@ -24,10 +32,8 @@
 header.is-scrolled {
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
   border-bottom-color: transparent;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
 }
 
 .nav-links a.is-active {
@@ -40,10 +46,10 @@ header.is-scrolled {
 
 [data-reveal] {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(20px);
   transition:
-    opacity 0.7s ease var(--delay, 0ms),
-    transform 0.7s ease var(--delay, 0ms);
+    opacity 0.45s ease var(--delay, 0ms),
+    transform 0.45s ease var(--delay, 0ms);
 }
 
 [data-reveal].is-in {
@@ -53,40 +59,24 @@ header.is-scrolled {
 
 [data-reveal="project"] {
   opacity: 0;
-  transform: translateY(36px) scale(0.94);
-  filter: blur(6px);
+  transform: translateY(24px);
   transition:
-    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms),
-    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms),
-    filter 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms);
+    opacity 0.45s ease var(--delay, 0ms),
+    transform 0.45s ease var(--delay, 0ms);
 }
 
 [data-reveal="project"].is-in {
   opacity: 1;
   transform: none;
-  filter: blur(0);
+}
+
+.project-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
 }
 
 .hero-image img {
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.has-motion .hero-image img {
-  animation: photo-glow 4.5s ease-in-out infinite;
-}
-
-@keyframes photo-glow {
-  0%,
-  100% {
-    box-shadow:
-      0 0 0 8px rgba(0, 224, 255, 0.06),
-      0 20px 60px rgba(0, 0, 0, 0.35);
-  }
-  50% {
-    box-shadow:
-      0 0 0 12px rgba(0, 224, 255, 0.12),
-      0 24px 70px rgba(0, 224, 255, 0.12);
-  }
+  transition: transform 0.35s ease;
 }
 
 .btn,
@@ -113,18 +103,11 @@ header.is-scrolled {
 .skill-item,
 .contact-card,
 .stat-card {
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-item:hover,
-.contact-card:hover,
-.stat-card:hover {
-  box-shadow: 0 12px 30px rgba(0, 224, 255, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 [data-tilt] {
-  transform-style: preserve-3d;
-  transition: transform 0.2s ease, border-color 0.3s ease;
+  transition: transform 0.2s ease, border-color 0.25s ease;
 }
 
 [data-tilt]:hover {
@@ -136,10 +119,5 @@ header.is-scrolled {
   [data-reveal="project"] {
     opacity: 1;
     transform: none;
-    filter: none;
-  }
-
-  .has-motion .hero-image img {
-    animation: none;
   }
 }

@@ -16,15 +16,14 @@ header {
     z-index: 1000;
 
     background: rgba(var(--header-bg-rgb), var(--header-alpha));
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     transition:
-      padding .25s ease,
-      box-shadow .25s ease,
-      background .2s ease,
-      border-color .3s ease,
-      backdrop-filter .25s ease;
+      padding .2s ease,
+      box-shadow .2s ease,
+      background .15s linear,
+      border-color .2s ease;
 }
 
 .logo {

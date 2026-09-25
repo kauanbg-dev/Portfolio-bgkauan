@@ -196,7 +196,6 @@ main {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 24px;
-  backdrop-filter: blur(10px);
 }
 
 .about-card {
@@ -283,7 +282,6 @@ main {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 24px;
-  backdrop-filter: blur(10px);
 }
 
 .experience-item.is-current .experience-card {
@@ -404,7 +402,6 @@ main {
   border-radius: 20px;
   background: var(--surface);
   border: 1px solid var(--border);
-  backdrop-filter: blur(10px);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
