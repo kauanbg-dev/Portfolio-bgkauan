@@ -10,13 +10,13 @@ HTML · CSS · JavaScript · deploy na Vercel
 
 ## Projetos em destaque
 
-### Bala de Munich
+### BG Finance
 
-Site do time na Super Copa dos Streamers.
+Receitas, despesas e autenticação.
 
-[Site](https://balademunich.vercel.app/) · [Código](https://github.com/kauanbg-dev/bala-de-munich)
+[Site](https://bg-finance.onrender.com) · [Código](https://github.com/kauanbg-dev/bg-finance)
 
-![Bala de Munich](./img/preview-munich.png)
+![BG Finance](./img/preview-bgfinance.png)
 
 ### Achei Buscador
 
@@ -26,6 +26,14 @@ CEP, feriados e bancos com React e BrasilAPI.
 
 ![Achei Buscador](./img/preview-achei.png)
 
+### Pratique + Pilates
+
+Site institucional do estúdio.
+
+[Site](https://pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/pratique-pilates)
+
+![Pratique + Pilates](./img/preview-pilates.png)
+
 ### BgConverter
 
 Câmbio com cotação ao vivo, várias moedas e histórico.
@@ -33,14 +41,6 @@ Câmbio com cotação ao vivo, várias moedas e histórico.
 [Site](https://bgconverter.vercel.app/) · [Código](https://github.com/kauanbg-dev/bgconverter)
 
 ![BgConverter](./img/preview-bgconverter.png)
-
-### BG Finance
-
-Receitas, despesas e autenticação.
-
-[Site](https://bg-finance.onrender.com) · [Código](https://github.com/kauanbg-dev/bg-finance)
-
-![BG Finance](./img/preview-bgfinance.png)
 
 ### A Dois
 
@@ -50,13 +50,13 @@ Caderno do casal: saídas, quem pagou e sync nos dois celulares.
 
 ![A Dois](./img/preview-adois.png)
 
-### Pratique + Pilates
+### Bala de Munich
 
-Site institucional do estúdio.
+Site do time na Super Copa dos Streamers.
 
-[Site](https://pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/pratique-pilates)
+[Site](https://balademunich.vercel.app/) · [Código](https://github.com/kauanbg-dev/bala-de-munich)
 
-![Pratique + Pilates](./img/preview-pilates.png)
+![Bala de Munich](./img/preview-munich.png)
 
 ## Contato
 
