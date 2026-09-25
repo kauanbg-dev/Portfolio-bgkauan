@@ -1,10 +1,14 @@
 # Portfólio — Kauan Borges
 
-Site pessoal com projetos, stack e currículo.
+Site pessoal com projetos, stack e currículo (PT/EN).
 
-**Site:** [portifolio-bgkauan.vercel.app](https://portifolio-bgkauan.vercel.app/)
+**Ao vivo:** [portifolio-bgkauan.vercel.app](https://portifolio-bgkauan.vercel.app/)
 
-## Projetos
+## Stack
+
+HTML · CSS · JavaScript · deploy na Vercel
+
+## Projetos em destaque
 
 ### Bala de Munich
 
@@ -45,3 +49,7 @@ Site institucional do estúdio.
 [Site](https://pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/pratique-pilates)
 
 ![Pratique + Pilates](./img/preview-pilates.png)
+
+## Contato
+
+[kauanbg.dev@gmail.com](mailto:kauanbg.dev@gmail.com) · [LinkedIn](https://www.linkedin.com/in/kauan-borges-079074370/) · [GitHub](https://github.com/kauanbg-dev)
