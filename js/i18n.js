@@ -20,7 +20,7 @@ const translations = {
     hero: {
       tag: "Portfólio de Desenvolvedor",
       role: "Desenvolvedor Front-end",
-      text: "Estou no 5º período de Ciência da Computação. Faço sites e apps web com HTML, CSS, JavaScript, React e Node.js, responsivos no celular e no computador.",
+      text: "Estou no 5º período de Ciência da Computação e atuo como Desenvolvedor Front-end. Desenvolvo aplicações web responsivas utilizando HTML, CSS, JavaScript e React, com experiência em integração com APIs e desenvolvimento de soluções utilizando Node.js.",
       projects: "Ver projetos",
       contact: "Falar comigo",
       stat1: "5º",
@@ -32,7 +32,9 @@ const translations = {
     about: {
       kicker: "Sobre mim",
       title: "Quem sou eu",
-      p1: "Olá, eu sou o Kauan. Estudo Ciência da Computação e gosto de pegar uma ideia e transformar em site ou sistema de verdade: do visual até a parte que faz tudo funcionar.",
+      p1: "Sou estudante de Ciência da Computação e desenvolvedor Front-end, com experiência prática no desenvolvimento e manutenção de aplicações web.",
+      p2: "Gosto de transformar necessidades em soluções funcionais, pensando tanto na experiência do usuário quanto na qualidade do código. Tenho experiência com HTML, CSS, JavaScript, React, Node.js, APIs REST e Git, além de vivência profissional em ambiente de desenvolvimento.",
+      p3: "Atualmente, atuo como estagiário Front-end na Prefeitura do Rio de Janeiro, contribuindo para a evolução de sistemas utilizados no dia a dia da equipe.",
     },
     experience: {
       kicker: "Carreira",
@@ -46,32 +48,36 @@ const translations = {
         role: "Estagiário Front-end",
         org: "Prefeitura do Rio de Janeiro",
         summary:
-          "Estágio de front-end no portal web da Receita Municipal: desenvolvo e melhoro as telas que a equipe usa no dia a dia.",
+          "Atuação no desenvolvimento e manutenção do portal web da Receita Municipal, contribuindo para a evolução das interfaces e funcionalidades utilizadas pela equipe.",
         point1:
-          "Evoluo interfaces em HTML, CSS e JavaScript — layout, usabilidade e correção de bugs nas telas do sistema.",
-        point2:
-          "Integro as telas com as APIs do backend e cuido de pontos de segurança no front, como prevenção de XSS.",
+          "Desenvolvimento e manutenção de interfaces utilizando HTML, CSS e JavaScript.",
+        point2: "Integração do front-end com APIs do backend.",
         point3:
-          "Trabalho em time com Git: branch, commit, pull request e revisão de código.",
+          "Correção de bugs e melhorias de usabilidade e responsividade.",
+        point4:
+          "Aplicação de boas práticas de segurança no front-end, incluindo prevenção contra XSS.",
+        point5:
+          "Desenvolvimento colaborativo utilizando Git, branches, commits, pull requests e code review.",
       },
       job2: {
         period: "Fev 2025 — Jul 2025",
-        role: "Suporte técnico",
+        role: "Suporte Técnico",
         org: "Barbearia Ascenção",
         summary:
-          "Cuidava da parte digital da barbearia: sistemas de agendamento, site e o dia a dia das ferramentas de TI usadas pela equipe.",
-        point1:
-          "Suporte técnico no AppBarber e nos sistemas de agendamento, para o atendimento continuar fluindo.",
-        point2: "Atualização e manutenção do site da barbearia.",
+          "Responsável pelo suporte e manutenção das soluções digitais utilizadas pela equipe, incluindo sistemas de agendamento e o site da empresa.",
+        point1: "Suporte e manutenção do sistema de agendamento AppBarber.",
+        point2: "Atualização e manutenção do site institucional.",
         point3:
-          "Apoio em demandas de TI no dia a dia, deixando as ferramentas digitais estáveis para o time.",
+          "Resolução de problemas relacionados às ferramentas digitais utilizadas pela equipe.",
+        point4:
+          "Apoio às demandas de tecnologia e manutenção dos sistemas utilizados no dia a dia.",
       },
       edu: {
         period: "5º período",
         role: "Ciência da Computação",
         org: "Graduação em andamento",
         summary:
-          "Base em lógica, programação e engenharia de software — aplicada nos projetos públicos do portfólio e no estágio de front-end.",
+          "Formação com foco em programação, lógica computacional, estruturas de dados e fundamentos de engenharia de software, complementada por projetos pessoais e experiência prática como desenvolvedor Front-end.",
       },
     },
     skills: {
@@ -142,7 +148,7 @@ const translations = {
     hero: {
       tag: "Developer Portfolio",
       role: "Frontend Developer",
-      text: "I’m in the 5th semester of Computer Science. I build websites and web apps with HTML, CSS, JavaScript, React, and Node.js, responsive on phone and desktop.",
+      text: "I’m in the 5th semester of Computer Science and work as a Frontend Developer. I build responsive web applications with HTML, CSS, JavaScript, and React, with experience integrating APIs and delivering solutions with Node.js.",
       projects: "View projects",
       contact: "Email me",
       stat1: "5th",
@@ -154,7 +160,9 @@ const translations = {
     about: {
       kicker: "About me",
       title: "Who I am",
-      p1: "Hey, I’m Kauan. I study Computer Science and I like taking an idea and turning it into a real website or system, from the look of it to the part that makes it work.",
+      p1: "I’m a Computer Science student and frontend developer with hands-on experience building and maintaining web applications.",
+      p2: "I like turning real needs into working products, with attention to user experience and code quality. I work with HTML, CSS, JavaScript, React, Node.js, REST APIs, and Git, and I have professional experience in a development environment.",
+      p3: "I’m currently a frontend intern at the City of Rio de Janeiro, helping evolve systems the team uses every day.",
     },
     experience: {
       kicker: "Career",
@@ -168,32 +176,34 @@ const translations = {
         role: "Frontend Intern",
         org: "City of Rio de Janeiro (Prefeitura do Rio)",
         summary:
-          "Frontend internship on the Municipal Revenue web portal: I build and improve the screens the team uses day to day.",
+          "Work on the development and maintenance of the Municipal Revenue web portal, helping evolve the interfaces and features used by the team.",
         point1:
-          "I evolve interfaces in HTML, CSS, and JavaScript — layout, usability, and bug fixes across system screens.",
-        point2:
-          "I connect screens to backend APIs and harden frontend security points, such as XSS prevention.",
-        point3:
-          "I work with the team on Git: branches, commits, pull requests, and code review.",
+          "Development and maintenance of interfaces with HTML, CSS, and JavaScript.",
+        point2: "Frontend integration with backend APIs.",
+        point3: "Bug fixes and usability and responsiveness improvements.",
+        point4:
+          "Frontend security best practices, including XSS prevention.",
+        point5:
+          "Collaborative development with Git: branches, commits, pull requests, and code review.",
       },
       job2: {
         period: "Feb 2025 — Jul 2025",
         role: "Technical Support",
         org: "Barbearia Ascenção",
         summary:
-          "I handled the barbershop’s digital side: booking systems, the website, and day-to-day IT tools used by the team.",
-        point1:
-          "Technical support for AppBarber and booking systems so appointments kept running smoothly.",
-        point2: "Updates and maintenance of the barbershop website.",
-        point3:
-          "Day-to-day IT support, keeping digital tools stable for the team.",
+          "Responsible for supporting and maintaining the digital solutions used by the team, including booking systems and the company website.",
+        point1: "Support and maintenance of the AppBarber booking system.",
+        point2: "Updates and maintenance of the institutional website.",
+        point3: "Troubleshooting of the digital tools used by the team.",
+        point4:
+          "Support for technology requests and day-to-day system maintenance.",
       },
       edu: {
         period: "5th semester",
         role: "Computer Science",
         org: "Undergraduate degree in progress",
         summary:
-          "Foundation in logic, programming, and software engineering — applied in public portfolio projects and the frontend internship.",
+          "Coursework focused on programming, computational logic, data structures, and software engineering fundamentals, complemented by personal projects and hands-on experience as a frontend developer.",
       },
     },
     skills: {
