@@ -482,8 +482,8 @@ main {
   margin: 0 0 20px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
   overflow: hidden;
   min-height: calc(1.7em * 3);
 }

@@ -12,7 +12,7 @@ HTML · CSS · JavaScript · deploy na Vercel
 
 ### BG Finance
 
-Receitas e despesas por categoria, gráficos do mês, visão de planilha e exportação CSV.
+Sistema de gestão financeira com controle de receitas e despesas, categorização, gráficos mensais e visualização em planilha. Possui autenticação de usuários, tema claro/escuro e exportação de dados em CSV.
 
 [Site](https://bg-finance.onrender.com) · [Código](https://github.com/kauanbg-dev/bg-finance)
 
