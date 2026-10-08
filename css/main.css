@@ -91,10 +91,11 @@ main {
 }
 
 .hero-text h2 {
-  font-size: 1.25rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
   font-weight: 600;
   color: var(--accent-soft);
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .hero-text p {
@@ -482,8 +483,8 @@ main {
   margin: 0 0 20px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  line-clamp: 5;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
   overflow: hidden;
   min-height: calc(1.7em * 3);
 }

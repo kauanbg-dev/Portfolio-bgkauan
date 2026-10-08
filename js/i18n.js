@@ -19,13 +19,14 @@ const translations = {
     },
     hero: {
       tag: "Portfólio de Desenvolvedor",
-      role: "Desenvolvedor Front-end",
+      role: "Desenvolvedor Front-end | JavaScript | React | Node.js",
       text: "Estou no 5º período de Ciência da Computação e atuo como Desenvolvedor Front-end. Desenvolvo aplicações web responsivas utilizando HTML, CSS, JavaScript e React, com experiência em integração com APIs e desenvolvimento de soluções utilizando Node.js.",
       projects: "Ver projetos",
       contact: "Falar comigo",
       stat1: "5º",
       stat1Label: "período em Ciência da Computação",
-      stat2Label: "tecnologias em uso nos projetos",
+      stat2: "Front-end",
+      stat2Label: "experiência profissional em desenvolvimento",
       stat3Label: "projetos publicados com código aberto",
       photo: "Foto de Kauan Borges",
     },
@@ -86,26 +87,28 @@ const translations = {
     },
     projects: {
       kicker: "Projetos",
-      title: "Trabalhos em destaque",
+      title: "Projetos em destaque",
+      intro:
+        "Projetos desenvolvidos para praticar e aplicar tecnologias de desenvolvimento web em soluções reais.",
       view: "Ver projeto",
       code: "Ver código",
       converter:
-        "Conversor de câmbio com cotação ao vivo, várias moedas, histórico e cópia do resultado.",
+        "Aplicação web de conversão de moedas com consulta de cotações em tempo real, suporte a múltiplas moedas, histórico de conversões e cópia dos resultados.",
       converterAlt: "Tela do conversor de moedas BgConverter",
       achei:
-        "Busca de CEP, calendário de feriados e consulta de bancos com a BrasilAPI. Feito em React, com histórico no navegador.",
+        "Aplicação desenvolvida em React para consulta de CEP, feriados e instituições bancárias utilizando a BrasilAPI. Possui histórico de pesquisas armazenado no navegador e interface responsiva.",
       acheiAlt: "Tela do Achei Buscador com CEP, feriados e bancos",
       finance:
-        "Sistema de gestão financeira com controle de receitas e despesas, categorização, gráficos mensais e visualização em planilha. Possui autenticação de usuários, tema claro/escuro e exportação de dados em CSV.",
+        "Aplicação web de controle financeiro com autenticação de usuários, gerenciamento de receitas e despesas, categorização de lançamentos e gráficos para acompanhamento mensal. Possui visualização em formato de planilha, tema claro/escuro e exportação de dados em CSV.",
       financeAlt: "Painel do BG Finance com saldo, gráficos e lançamentos",
       pilates:
-        "Site institucional para um estúdio: serviços claros, navegação simples e CTAs visíveis para o público entrar em contato.",
+        "Site institucional responsivo desenvolvido para um estúdio de Pilates, com apresentação de serviços, navegação otimizada e chamadas para ação direcionadas ao contato com o cliente.",
       pilatesAlt: "Site do estúdio Pratique + Pilates",
       munich:
-        "Site do time na Super Copa dos Streamers: elenco, tabela, chave de confrontos, stats, votação de MVP e lives.",
+        "Plataforma web desenvolvida para acompanhamento de um time na Super Copa dos Streamers, com elenco, tabela, confrontos, estatísticas, votação de MVP e informações sobre transmissões ao vivo.",
       munichAlt: "Chave de confrontos do site Bala de Munich",
       adois:
-        "Caderno compartilhado do casal: anota as saídas, quem pagou e sincroniza nos dois celulares.",
+        "Aplicação web progressiva (PWA) para registro e acompanhamento de gastos compartilhados, permitindo identificar quem realizou cada pagamento e sincronizar as informações entre dispositivos por um código de casal persistido em Redis.",
       adoisAlt: "Tela do A Dois com resumo mensal do casal",
     },
     resume: {
@@ -147,13 +150,14 @@ const translations = {
     },
     hero: {
       tag: "Developer Portfolio",
-      role: "Frontend Developer",
+      role: "Frontend Developer | JavaScript | React | Node.js",
       text: "I’m in the 5th semester of Computer Science and work as a Frontend Developer. I build responsive web applications with HTML, CSS, JavaScript, and React, with experience integrating APIs and delivering solutions with Node.js.",
       projects: "View projects",
       contact: "Email me",
       stat1: "5th",
       stat1Label: "semester in Computer Science",
-      stat2Label: "technologies used in shipped work",
+      stat2: "Frontend",
+      stat2Label: "professional development experience",
       stat3Label: "public projects with source code",
       photo: "Photo of Kauan Borges",
     },
@@ -212,26 +216,28 @@ const translations = {
     },
     projects: {
       kicker: "Projects",
-      title: "Featured work",
+      title: "Featured projects",
+      intro:
+        "Projects built to practice and apply web development technologies in real solutions.",
       view: "View project",
       code: "View code",
       converter:
-        "Currency converter with live rates, multiple currencies, history, and a copy-to-clipboard result.",
+        "Currency conversion web app with real-time exchange rates, support for multiple currencies, conversion history, and copy-to-clipboard results.",
       converterAlt: "BgConverter currency converter screen",
       achei:
-        "ZIP code lookup, holiday calendar, and bank search via BrasilAPI. Built with React, with browser history.",
+        "React application for looking up ZIP codes, holidays, and banks via BrasilAPI. Search history is stored in the browser, with a responsive interface.",
       acheiAlt: "Achei Buscador screen with ZIP, holidays, and banks",
       finance:
-        "Financial management system with income and expense tracking, categorization, monthly charts, and a spreadsheet view. Includes user authentication, light/dark theme, and CSV data export.",
+        "Web application for personal finance with user authentication, income and expense management, categorized entries, and charts for monthly tracking. Includes a spreadsheet-style view, light/dark theme, and CSV data export.",
       financeAlt: "BG Finance dashboard with balance, charts, and entries",
       pilates:
-        "Institutional site for a Pilates studio: clear services, simple navigation, and visible CTAs so visitors can get in touch.",
+        "Responsive institutional website for a Pilates studio, with service presentation, streamlined navigation, and calls to action that lead visitors to get in touch.",
       pilatesAlt: "Pratique + Pilates studio website",
       munich:
-        "Club site for Bala de Munich in Super Copa dos Streamers: roster, standings, playoff bracket, stats, MVP voting, and live streams.",
+        "Web platform for following a team in Super Copa dos Streamers, with roster, standings, matchups, stats, MVP voting, and live stream information.",
       munichAlt: "Bala de Munich playoff bracket screen",
       adois:
-        "Shared notebook for a couple: log outings, who paid, and sync across both phones.",
+        "Progressive web app (PWA) for logging and tracking shared expenses, showing who paid each outing and syncing the same couple account across devices through a shared code persisted in Redis.",
       adoisAlt: "A Dois monthly summary screen for the couple",
     },
     resume: {

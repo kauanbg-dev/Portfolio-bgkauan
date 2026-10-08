@@ -12,7 +12,7 @@ HTML · CSS · JavaScript · deploy na Vercel
 
 ### BG Finance
 
-Sistema de gestão financeira com controle de receitas e despesas, categorização, gráficos mensais e visualização em planilha. Possui autenticação de usuários, tema claro/escuro e exportação de dados em CSV.
+Aplicação web de controle financeiro com autenticação, receitas e despesas, categorização, gráficos mensais, planilha e exportação CSV. PostgreSQL.
 
 [Site](https://bg-finance.onrender.com) · [Código](https://github.com/kauanbg-dev/bg-finance)
 
@@ -20,7 +20,7 @@ Sistema de gestão financeira com controle de receitas e despesas, categorizaç�
 
 ### Achei Buscador
 
-CEP, feriados e bancos com React e BrasilAPI.
+Consulta de CEP, feriados e bancos com React e BrasilAPI, com histórico no navegador.
 
 [Site](https://achei-buscador.vercel.app/) · [Código](https://github.com/kauanbg-dev/achei-buscador)
 
@@ -28,7 +28,7 @@ CEP, feriados e bancos com React e BrasilAPI.
 
 ### Pratique + Pilates
 
-Site institucional do estúdio.
+Site institucional responsivo do estúdio, com serviços e CTAs de contato.
 
 [Site](https://pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/pratique-pilates)
 
@@ -36,7 +36,7 @@ Site institucional do estúdio.
 
 ### BgConverter
 
-Câmbio com cotação ao vivo, várias moedas e histórico.
+Conversão de moedas com cotação em tempo real, histórico e cópia do resultado.
 
 [Site](https://bgconverter.vercel.app/) · [Código](https://github.com/kauanbg-dev/bgconverter)
 
@@ -44,7 +44,7 @@ Câmbio com cotação ao vivo, várias moedas e histórico.
 
 ### A Dois
 
-Caderno do casal: saídas, quem pagou e sync nos dois celulares.
+PWA de gastos compartilhados: quem pagou e sync entre dispositivos via código de casal no Redis.
 
 [Site](https://adois-chi.vercel.app/) · [Código](https://github.com/kauanbg-dev/adois)
 
@@ -52,7 +52,7 @@ Caderno do casal: saídas, quem pagou e sync nos dois celulares.
 
 ### Bala de Munich
 
-Site do time na Super Copa dos Streamers.
+Plataforma do time na Super Copa dos Streamers: elenco, tabela, confrontos, stats, MVP e lives.
 
 [Site](https://balademunich.vercel.app/) · [Código](https://github.com/kauanbg-dev/bala-de-munich)
 
