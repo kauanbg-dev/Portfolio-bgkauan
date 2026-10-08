@@ -12,7 +12,7 @@ HTML · CSS · JavaScript · deploy na Vercel
 
 ### BG Finance
 
-Receitas, despesas e autenticação.
+Receitas e despesas por categoria, gráficos do mês, visão de planilha e exportação CSV.
 
 [Site](https://bg-finance.onrender.com) · [Código](https://github.com/kauanbg-dev/bg-finance)
 

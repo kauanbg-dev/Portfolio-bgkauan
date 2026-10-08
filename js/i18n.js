@@ -90,8 +90,8 @@ const translations = {
         "Busca de CEP, calendário de feriados e consulta de bancos com a BrasilAPI. Feito em React, com histórico no navegador.",
       acheiAlt: "Tela do Achei Buscador com CEP, feriados e bancos",
       finance:
-        "Controle de receitas e despesas com login, dashboard e fluxo de usuário. Stack de backend + front-end para um produto completo.",
-      financeAlt: "Interface do sistema BG Finance",
+        "Receitas e despesas por categoria, gráficos do mês e visão de planilha. Login, modo claro ou escuro e exportação CSV.",
+      financeAlt: "Painel do BG Finance com saldo, gráficos e lançamentos",
       pilates:
         "Site institucional para um estúdio: serviços claros, navegação simples e CTAs visíveis para o público entrar em contato.",
       pilatesAlt: "Site do estúdio Pratique + Pilates",
@@ -212,8 +212,8 @@ const translations = {
         "ZIP code lookup, holiday calendar, and bank search via BrasilAPI. Built with React, with browser history.",
       acheiAlt: "Achei Buscador screen with ZIP, holidays, and banks",
       finance:
-        "Income and expense tracking with login, dashboard, and a full user flow. Front-end plus backend for a complete product.",
-      financeAlt: "BG Finance app interface",
+        "Income and expenses by category, monthly charts, and a spreadsheet view. Login, light or dark mode, and CSV export.",
+      financeAlt: "BG Finance dashboard with balance, charts, and entries",
       pilates:
         "Institutional site for a Pilates studio: clear services, simple navigation, and visible CTAs so visitors can get in touch.",
       pilatesAlt: "Pratique + Pilates studio website",
