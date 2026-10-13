@@ -14,24 +14,17 @@ function rafThrottle(fn) {
 
 const header = document.querySelector("header");
 if (header) {
-  let lastAlpha = "";
+  let scrolled = false;
   const onScroll = rafThrottle(() => {
     const y = window.scrollY;
-    header.classList.toggle("is-scrolled", y > 10);
-
-    // Atualiza alpha só em degraus (menos repaint que a cada pixel)
-    const t = Math.min(Math.max(y / 220, 0), 1);
-    const isMobile = window.matchMedia("(max-width: 860px)").matches;
-    const minAlpha = isMobile ? 0.82 : 0.55;
-    const alpha = (0.9 - t * (0.9 - minAlpha)).toFixed(2);
-    if (alpha !== lastAlpha) {
-      lastAlpha = alpha;
-      header.style.setProperty("--header-alpha", alpha);
+    const next = scrolled ? y > 4 : y > 16;
+    if (next !== scrolled) {
+      scrolled = next;
+      header.classList.toggle("is-scrolled", scrolled);
     }
   });
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll, { passive: true });
 }
 
 const navToggle = document.querySelector("[data-nav-toggle]");

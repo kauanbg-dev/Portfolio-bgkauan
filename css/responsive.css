@@ -42,11 +42,6 @@
     column-gap: 8px;
   }
 
-  header.is-scrolled {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   .logo {
     grid-column: 1;
     grid-row: 1;
