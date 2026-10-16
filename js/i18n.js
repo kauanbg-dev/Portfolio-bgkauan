@@ -6,6 +6,11 @@ const translations = {
         "Portfólio de Kauan Borges, estudante de Ciência da Computação e desenvolvedor front-end. Projetos com HTML, CSS, JavaScript, React e Node.js.",
     },
     skip: "Pular para o conteúdo",
+    intro: {
+      kicker: "Olá, eu sou",
+      role: "Desenvolvedor Front-end",
+      enter: "Ver portfólio",
+    },
     menu: "Abrir menu",
     menuClose: "Fechar menu",
     nav: {
@@ -27,7 +32,8 @@ const translations = {
       stat1Label: "período em Ciência da Computação",
       stat2: "Front-end",
       stat2Label: "experiência profissional em desenvolvimento",
-      stat3Label: "projetos publicados com código aberto",
+      stat3: "Produção",
+      stat3Label: "front-end no ar, com API e autenticação",
       photo: "Foto de Kauan Borges",
     },
     about: {
@@ -114,7 +120,7 @@ const translations = {
     resume: {
       kicker: "Currículo",
       title: "Formação e experiência",
-      text: "Currículo com formação, stack e projetos. Use o PDF em processos seletivos ou para uma leitura rápida do meu perfil.",
+      text: "Currículo com formação, stack e projetos, pronto para uma leitura rápida ou para um processo seletivo.",
       view: "Visualizar currículo",
       download: "Baixar PDF",
       file: "./Curriculo_Kauan_Borges.pdf",
@@ -137,6 +143,11 @@ const translations = {
         "Portfolio of Kauan Borges, Computer Science student and frontend developer. Projects with HTML, CSS, JavaScript, React, and Node.js.",
     },
     skip: "Skip to content",
+    intro: {
+      kicker: "Hi, I am",
+      role: "Frontend developer",
+      enter: "View portfolio",
+    },
     menu: "Open menu",
     menuClose: "Close menu",
     nav: {
@@ -158,7 +169,8 @@ const translations = {
       stat1Label: "semester in Computer Science",
       stat2: "Frontend",
       stat2Label: "professional development experience",
-      stat3Label: "public projects with source code",
+      stat3: "Production",
+      stat3Label: "live front-end, with API and authentication",
       photo: "Photo of Kauan Borges",
     },
     about: {
@@ -243,7 +255,7 @@ const translations = {
     resume: {
       kicker: "Resume",
       title: "Education and experience",
-      text: "Resume with education, stack, and projects. Use the PDF for applications or a quick overview of my profile.",
+      text: "A resume with education, stack, and projects, ready for a quick read or a job application.",
       view: "View resume",
       download: "Download PDF",
       file: "./Resume_Kauan_Borges.pdf",

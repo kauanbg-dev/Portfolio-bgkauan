@@ -82,7 +82,7 @@ if (!reduceMotion) {
   });
 
   document.querySelectorAll('[data-reveal="project"]').forEach((el, index) => {
-    el.style.setProperty("--delay", `${index * 80}ms`);
+    el.style.setProperty("--delay", `${(index % 2) * 110}ms`);
   });
 
   const reveal = new IntersectionObserver(
@@ -98,23 +98,6 @@ if (!reduceMotion) {
   );
 
   document.querySelectorAll("[data-reveal]").forEach((el) => reveal.observe(el));
-
-  document.querySelectorAll("[data-tilt]").forEach((card) => {
-    const media = window.matchMedia("(hover: hover) and (pointer: fine)");
-    if (!media.matches) return;
-
-    const onTilt = rafThrottle((event) => {
-      const box = card.getBoundingClientRect();
-      const x = (event.clientX - box.left) / box.width - 0.5;
-      const y = (event.clientY - box.top) / box.height - 0.5;
-      card.style.transform = `perspective(900px) rotateX(${y * -5}deg) rotateY(${x * 6}deg) translateY(-4px)`;
-    });
-
-    card.addEventListener("pointermove", onTilt, { passive: true });
-    card.addEventListener("pointerleave", () => {
-      card.style.transform = "";
-    });
-  });
 
   const photo = document.querySelector("[data-hero-photo]");
   if (photo && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {

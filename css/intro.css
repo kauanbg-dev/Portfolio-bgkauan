@@ -1,0 +1,130 @@
+.intro {
+  display: none;
+}
+
+html.intro-pending {
+  overflow: hidden;
+}
+
+html.intro-pending .intro {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  background: var(--bg);
+  color: var(--text);
+}
+
+html.intro-pending .intro[hidden] {
+  display: grid;
+}
+
+.intro-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(520px circle at 50% 38%, var(--glow-1), transparent 55%),
+    radial-gradient(420px circle at 72% 78%, var(--glow-2), transparent 50%);
+}
+
+.intro-stage {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px;
+  max-width: 640px;
+}
+
+.intro-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.intro-kicker {
+  margin: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-text);
+}
+
+.intro-name {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--heading);
+}
+
+.intro-role {
+  margin: 0 0 18px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.intro-enter {
+  border: 0;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: 12px;
+  padding: 12px 22px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+html.intro-pending .intro-logo,
+html.intro-pending .intro-kicker,
+html.intro-pending .intro-name,
+html.intro-pending .intro-role,
+html.intro-pending .intro-enter {
+  opacity: 0;
+  animation: intro-in 0.7s ease forwards;
+}
+
+html.intro-pending .intro-logo { animation-delay: 0.15s; }
+html.intro-pending .intro-kicker { animation-delay: 0.4s; }
+html.intro-pending .intro-name { animation-delay: 0.62s; transform: translateY(12px); }
+html.intro-pending .intro-role { animation-delay: 0.88s; }
+html.intro-pending .intro-enter { animation-delay: 1.12s; }
+
+@keyframes intro-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+html.intro-leaving .intro {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.55s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.intro-pending .intro-logo,
+  html.intro-pending .intro-kicker,
+  html.intro-pending .intro-name,
+  html.intro-pending .intro-role,
+  html.intro-pending .intro-enter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  html.intro-leaving .intro {
+    transition: none;
+  }
+}
