@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
   header {
     grid-template-columns: 1fr auto auto;
     align-items: center;
@@ -71,8 +71,9 @@
     top: calc(100% + 8px);
     left: 4%;
     right: 4%;
-    grid-column: auto;
+    grid-column: 1 / -1;
     grid-row: auto;
+    justify-self: stretch;
     width: auto;
     max-height: none;
     margin: 0;
@@ -125,6 +126,64 @@
   .nav-links a:focus-visible {
     background: rgba(0, 224, 255, 0.12);
     color: var(--accent-text);
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .nav-social {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 8px;
+    border-radius: 16px;
+    background: rgba(var(--header-bg-rgb), 0.98);
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .nav-social a {
+    width: auto;
+    height: auto;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 6px;
+    border-radius: 12px;
+    background: var(--surface-2);
+    border: 1px solid transparent;
+  }
+
+  .nav-social a:hover,
+  .nav-social a:focus-visible {
+    border-color: rgba(0, 224, 255, 0.35);
+    background: rgba(0, 224, 255, 0.1);
+  }
+
+  .nav-social svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-social span {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--nav-link);
   }
 
   .lang-switch {

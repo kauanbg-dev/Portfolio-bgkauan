@@ -57,7 +57,7 @@ if (header && navToggle && siteNav) {
   window.addEventListener(
     "resize",
     () => {
-      if (!window.matchMedia("(max-width: 860px)").matches) setNavOpen(false);
+      if (!window.matchMedia("(max-width: 1100px)").matches) setNavOpen(false);
     },
     { passive: true }
   );
@@ -67,7 +67,7 @@ if (!reduceMotion) {
   document.documentElement.classList.add("has-motion");
 
   // Spotlight só em desktop com mouse fino; throttled
-  const canSpotlight = window.matchMedia("(hover: hover) and (pointer: fine) and (min-width: 861px)").matches;
+  const canSpotlight = window.matchMedia("(hover: hover) and (pointer: fine) and (min-width: 1101px)").matches;
   if (canSpotlight) {
     const onMove = rafThrottle((event) => {
       document.documentElement.style.setProperty("--mx", `${event.clientX}px`);

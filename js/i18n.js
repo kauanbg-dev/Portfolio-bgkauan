@@ -20,6 +20,7 @@ const translations = {
       projects: "Projetos",
       resume: "Currículo",
       contact: "Contato",
+      social: "Redes sociais",
       lang: "Idioma",
     },
     hero: {
@@ -157,6 +158,7 @@ const translations = {
       projects: "Projects",
       resume: "Resume",
       contact: "Contact",
+      social: "Social links",
       lang: "Language",
     },
     hero: {
