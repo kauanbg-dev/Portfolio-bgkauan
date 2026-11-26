@@ -196,8 +196,7 @@ main {
 }
 
 .about-card,
-.project-card,
-.contact-card {
+.project-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -538,44 +537,89 @@ main {
   transform: translateY(-2px);
 }
 
+.contact-panel {
+  max-width: 920px;
+  padding: 22px;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(0, 224, 255, 0.07), transparent 120px),
+    var(--surface);
+}
+
+.contact-note {
+  margin: 2px 4px 18px;
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 520px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
 .contact-card {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 168px;
+  padding: 18px 16px 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--bg);
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.contact-card img {
-  width: 40px;
-  height: 40px;
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.contact-icon img {
+  width: 22px;
+  height: 22px;
   object-fit: contain;
-  flex-shrink: 0;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.contact-copy strong {
+  color: var(--heading);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.contact-copy span {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.contact-open {
+  margin-top: auto;
+  color: var(--accent-text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .contact-card:hover,
 .contact-card:focus-visible {
-  transform: translateY(-5px);
-  border-color: rgba(0, 224, 255, 0.22);
-}
-
-.contact-card strong {
-  display: block;
-  color: var(--heading);
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-}
-
-.contact-card span {
-  color: var(--text-dim);
-  font-size: 0.95rem;
+  border-color: rgba(0, 224, 255, 0.45);
+  background: rgba(0, 224, 255, 0.04);
 }
 
 .resume-card {

@@ -38,9 +38,9 @@
   <link rel="stylesheet" href="./css/theme.css" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/header.css?v=4" />
-  <link rel="stylesheet" href="./css/main.css?v=8" />
+  <link rel="stylesheet" href="./css/main.css?v=9" />
   <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/responsive.css?v=9" />
+  <link rel="stylesheet" href="./css/responsive.css?v=10" />
   <link rel="stylesheet" href="./css/motion.css?v=3" />
   <link rel="stylesheet" href="./css/intro.css?v=9" />
 
@@ -482,28 +482,34 @@
         <h3 data-i18n="contact.title">Vamos conversar</h3>
       </div>
 
-      <div class="contact-grid">
-        <a href="https://github.com/kauanbg-dev" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <img src="./img/logo-github.svg" alt="" />
-          <div>
-            <strong>GitHub</strong>
-            <span>@kauanbg-dev</span>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <img src="./img/logo-linkedin.svg" alt="" />
-          <div>
-            <strong>LinkedIn</strong>
-            <span>kauan-borges</span>
-          </div>
-        </a>
-        <a href="mailto:kauanbg.dev@gmail.com" class="contact-card">
-          <img src="./img/logo-email.svg" alt="" />
-          <div>
-            <strong data-i18n="contact.email">E-mail</strong>
-            <span>kauanbg.dev@gmail.com</span>
-          </div>
-        </a>
+      <div class="contact-panel">
+        <p class="contact-note" data-i18n="contact.note">GitHub, LinkedIn ou e-mail.</p>
+        <div class="contact-grid">
+          <a href="https://github.com/kauanbg-dev" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon"><img src="./img/logo-github.svg" alt="" /></span>
+            <span class="contact-copy">
+              <strong>GitHub</strong>
+              <span>@kauanbg-dev</span>
+            </span>
+            <span class="contact-open" data-i18n="contact.open">Abrir</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon"><img src="./img/logo-linkedin.svg" alt="" /></span>
+            <span class="contact-copy">
+              <strong>LinkedIn</strong>
+              <span>kauan-borges</span>
+            </span>
+            <span class="contact-open" data-i18n="contact.open">Abrir</span>
+          </a>
+          <a href="mailto:kauanbg.dev@gmail.com" class="contact-card">
+            <span class="contact-icon"><img src="./img/logo-email.svg" alt="" /></span>
+            <span class="contact-copy">
+              <strong data-i18n="contact.email">E-mail</strong>
+              <span>kauanbg.dev@gmail.com</span>
+            </span>
+            <span class="contact-open" data-i18n="contact.open">Abrir</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -513,7 +519,7 @@
   </footer>
 
   <script src="./js/theme.js"></script>
-  <script src="./js/i18n.js?v=9"></script>
+  <script src="./js/i18n.js?v=10"></script>
   <script src="./js/intro.js?v=4"></script>
   <script src="./js/interactions.js?v=7"></script>
 </body>

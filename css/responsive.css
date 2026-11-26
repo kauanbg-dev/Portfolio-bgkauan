@@ -281,9 +281,28 @@
     font-size: 1.55rem;
   }
 
+  .contact-panel {
+    padding: 14px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
-    max-width: none;
+  }
+
+  .contact-card {
+    flex-direction: row;
+    align-items: center;
+    min-height: 0;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .contact-copy {
+    flex: 1;
+  }
+
+  .contact-open {
+    margin-top: 0;
   }
 
   .skill-item {

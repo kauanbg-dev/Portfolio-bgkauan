@@ -131,7 +131,9 @@ const translations = {
     contact: {
       kicker: "Contato",
       title: "Vamos conversar",
+      note: "GitHub, LinkedIn ou e-mail.",
       email: "E-mail",
+      open: "Abrir",
     },
     theme: {
       toggle: "Alternar tema claro e escuro",
@@ -268,7 +270,9 @@ const translations = {
     contact: {
       kicker: "Contact",
       title: "Let’s talk",
+      note: "GitHub, LinkedIn, or email.",
       email: "Email",
+      open: "Open",
     },
     theme: {
       toggle: "Toggle light and dark theme",
