@@ -52,7 +52,7 @@ PWA de gastos compartilhados: quem pagou e sync entre dispositivos via código d
 
 ### Bala de Munich
 
-Plataforma do time na Super Copa dos Streamers: elenco, tabela, confrontos, stats, MVP e lives.
+Site oficial do time de streamers na Super Copa dos Streamers, o campeonato oficial do streamer Coringa: elenco, tabela, confrontos, stats, MVP e lives.
 
 [Site](https://balademunich.vercel.app/) · [Código](https://github.com/kauanbg-dev/bala-de-munich)
 

@@ -97,7 +97,7 @@ const translations = {
       kicker: "Projetos",
       title: "Projetos em destaque",
       intro:
-        "Projetos desenvolvidos para praticar e aplicar tecnologias de desenvolvimento web em soluções reais.",
+        "Projetos no ar, de estudos a entregas oficiais para times e clientes.",
       view: "Ver projeto",
       code: "Ver código",
       converter:
@@ -113,7 +113,7 @@ const translations = {
         "Site institucional responsivo desenvolvido para um estúdio de Pilates, com apresentação de serviços, navegação otimizada e chamadas para ação direcionadas ao contato com o cliente.",
       pilatesAlt: "Site do estúdio Pratique + Pilates",
       munich:
-        "Plataforma web desenvolvida para acompanhamento de um time na Super Copa dos Streamers, com elenco, tabela, confrontos, estatísticas, votação de MVP e informações sobre transmissões ao vivo.",
+        "Site oficial do time de streamers Bala de Munich na Super Copa dos Streamers, o campeonato oficial do streamer Coringa. Reúne elenco, tabela, confrontos, estatísticas, votação de MVP e transmissões ao vivo.",
       munichAlt: "Chave de confrontos do site Bala de Munich",
       adois:
         "Aplicação web progressiva (PWA) para registro e acompanhamento de gastos compartilhados, permitindo identificar quem realizou cada pagamento e sincronizar as informações entre dispositivos por um código de casal persistido em Redis.",
@@ -236,7 +236,7 @@ const translations = {
       kicker: "Projects",
       title: "Featured projects",
       intro:
-        "Projects built to practice and apply web development technologies in real solutions.",
+        "Live projects, from practice work to official deliveries for teams and clients.",
       view: "View project",
       code: "View code",
       converter:
@@ -252,7 +252,7 @@ const translations = {
         "Responsive institutional website for a Pilates studio, with service presentation, streamlined navigation, and calls to action that lead visitors to get in touch.",
       pilatesAlt: "Pratique + Pilates studio website",
       munich:
-        "Web platform for following a team in Super Copa dos Streamers, with roster, standings, matchups, stats, MVP voting, and live stream information.",
+        "Official site for the Bala de Munich streamers' team in Super Copa dos Streamers, streamer Coringa's official championship. Covers roster, standings, matchups, stats, MVP voting, and live streams.",
       munichAlt: "Bala de Munich playoff bracket screen",
       adois:
         "Progressive web app (PWA) for logging and tracking shared expenses, showing who paid each outing and syncing the same couple account across devices through a shared code persisted in Redis.",
