@@ -320,20 +320,14 @@
     margin-top: 0;
   }
 
-  .skills-pyramid,
-  .skills-row {
-    gap: 12px;
+  .skills-group {
+    padding: 16px;
   }
 
   .skill-item {
-    width: 68px;
-    height: 68px;
-    border-radius: 16px;
-  }
-
-  .skill-item img {
-    width: 36px;
-    height: 36px;
+    flex: 1 1 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+    min-width: 0;
   }
 
   .experience-timeline::before {
