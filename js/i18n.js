@@ -9,7 +9,7 @@ const translations = {
     intro: {
       kicker: "Portfólio",
       role: "Desenvolvedor front-end · JavaScript, React e Node.js",
-      lead: "Projetos no ar, experiência na Prefeitura do Rio e currículo pronto para uma leitura rápida.",
+      lead: "Projetos no ar e currículo pronto para uma leitura rápida.",
       enter: "Entrar no portfólio",
       resume: "Ver só o currículo",
     },
@@ -149,7 +149,7 @@ const translations = {
     intro: {
       kicker: "Portfolio",
       role: "Frontend developer · JavaScript, React and Node.js",
-      lead: "Shipped projects, frontend work for the city of Rio de Janeiro, and a resume ready to read.",
+      lead: "Shipped projects and a resume ready to read.",
       enter: "Enter the portfolio",
       resume: "View resume only",
     },
