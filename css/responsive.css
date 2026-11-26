@@ -201,9 +201,24 @@
     height: 38px;
   }
 
-  main section[id],
+  main section[id] {
+    scroll-margin-top: 108px;
+  }
+
   #conteudo {
-    scroll-margin-top: 84px;
+    scroll-margin-top: 140px;
+  }
+
+  #contato {
+    margin-top: 104px;
+  }
+
+  .resume-card {
+    padding: 18px;
+  }
+
+  .resume-buttons {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -365,8 +380,11 @@
     height: 36px;
   }
 
-  main section[id],
+  main section[id] {
+    scroll-margin-top: 100px;
+  }
+
   #conteudo {
-    scroll-margin-top: 76px;
+    scroll-margin-top: 140px;
   }
 }

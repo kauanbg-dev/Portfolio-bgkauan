@@ -46,7 +46,11 @@ main {
 
 .section {
   margin-top: 88px;
-  scroll-margin-top: 96px;
+  scroll-margin-top: 120px;
+}
+
+#contato {
+  margin-top: 132px;
 }
 
 .section-title {
@@ -623,23 +627,31 @@ main {
 }
 
 .resume-card {
-  padding: 30px;
-  border-radius: 24px;
-  background: var(--surface);
+  max-width: 920px;
+  padding: 28px;
+  border-radius: 28px;
   border: 1px solid var(--border);
-  max-width: 640px;
+  background:
+    linear-gradient(180deg, rgba(0, 224, 255, 0.07), transparent 140px),
+    var(--surface);
 }
 
 .resume-card p {
+  max-width: 38rem;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .resume-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 280px));
+  gap: 14px;
+}
+
+.resume-buttons .btn {
+  width: 100%;
+  min-width: 0;
 }
 
 :focus-visible {
