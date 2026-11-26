@@ -121,10 +121,10 @@ const sections = [...document.querySelectorAll("main section[id]")];
 const navLinks = [...document.querySelectorAll(".nav-links a")];
 
 const setActive = rafThrottle(() => {
-  const y = window.scrollY + 120;
+  const marker = 110;
   let current = sections[0]?.id;
   sections.forEach((section) => {
-    if (section.offsetTop <= y) current = section.id;
+    if (section.getBoundingClientRect().top <= marker) current = section.id;
   });
   navLinks.forEach((link) => {
     link.classList.toggle("is-active", link.getAttribute("href") === `#${current}`);

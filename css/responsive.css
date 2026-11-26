@@ -205,6 +205,10 @@
   #conteudo {
     scroll-margin-top: 84px;
   }
+
+  #contato {
+    min-height: calc(100svh - 84px);
+  }
 }
 
 @media (max-width: 700px) {
@@ -304,5 +308,9 @@
   main section[id],
   #conteudo {
     scroll-margin-top: 76px;
+  }
+
+  #contato {
+    min-height: calc(100svh - 76px);
   }
 }
