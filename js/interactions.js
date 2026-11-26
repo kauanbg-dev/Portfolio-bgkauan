@@ -172,5 +172,15 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+const homeLink = document.querySelector("a.logo");
+homeLink?.addEventListener("click", (event) => {
+  if (homeLink.getAttribute("href") !== "#conteudo") return;
+  event.preventDefault();
+  pinned = null;
+  history.pushState(null, "", "#conteudo");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  setActive();
+});
+
 setActive();
 window.addEventListener("scroll", setActive, { passive: true });
