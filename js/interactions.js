@@ -122,10 +122,15 @@ const navLinks = [...document.querySelectorAll(".nav-links a")];
 
 const setActive = rafThrottle(() => {
   const marker = 110;
+  const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 8;
   let current = sections[0]?.id;
-  sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= marker) current = section.id;
-  });
+  if (atBottom) {
+    current = sections[sections.length - 1]?.id;
+  } else {
+    sections.forEach((section) => {
+      if (section.getBoundingClientRect().top <= marker) current = section.id;
+    });
+  }
   navLinks.forEach((link) => {
     link.classList.toggle("is-active", link.getAttribute("href") === `#${current}`);
   });

@@ -45,10 +45,6 @@ main {
   scroll-margin-top: 96px;
 }
 
-#contato {
-  min-height: calc(100svh - 96px);
-}
-
 .section-title {
   margin-bottom: 28px;
 }
