@@ -8,7 +8,7 @@ const translations = {
     skip: "Pular para o conteúdo",
     intro: {
       role: "Desenvolvedor front-end",
-      lead: "Estudo Ciência da Computação e faço interface no front-end.",
+      lead: "Projetos no ar e currículo pronto para uma leitura rápida.",
       enter: "Entrar",
       resume: "Currículo",
     },
@@ -147,7 +147,7 @@ const translations = {
     skip: "Skip to content",
     intro: {
       role: "Frontend developer",
-      lead: "I study computer science and build front-end interfaces.",
+      lead: "Shipped projects and a resume ready to read.",
       enter: "Enter",
       resume: "Resume",
     },
