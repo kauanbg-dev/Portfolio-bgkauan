@@ -235,6 +235,7 @@
 
   .contact-grid {
     grid-template-columns: 1fr;
+    max-width: none;
   }
 
   .skill-item {

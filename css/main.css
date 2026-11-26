@@ -536,8 +536,8 @@ main {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 520px);
+  gap: 12px;
 }
 
 .contact-card {

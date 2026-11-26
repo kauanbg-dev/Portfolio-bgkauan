@@ -120,20 +120,56 @@ if (!reduceMotion) {
 const sections = [...document.querySelectorAll("main section[id]")];
 const navLinks = [...document.querySelectorAll(".nav-links a")];
 
-const setActive = rafThrottle(() => {
-  const marker = 110;
-  const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 8;
-  let current = sections[0]?.id;
-  if (atBottom) {
-    current = sections[sections.length - 1]?.id;
-  } else {
-    sections.forEach((section) => {
-      if (section.getBoundingClientRect().top <= marker) current = section.id;
-    });
-  }
+let pinned = null;
+
+function mark(id) {
   navLinks.forEach((link) => {
-    link.classList.toggle("is-active", link.getAttribute("href") === `#${current}`);
+    link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
   });
+}
+
+function sectionFromScroll() {
+  const marker = 120;
+  let current = sections[0]?.id;
+  sections.forEach((section) => {
+    if (section.getBoundingClientRect().top <= marker) current = section.id;
+  });
+  return current;
+}
+
+const setActive = rafThrottle(() => {
+  mark(pinned || sectionFromScroll());
+});
+
+function releasePin() {
+  if (!pinned) return;
+  pinned = null;
+  setActive();
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("#")) return;
+    const section = document.querySelector(href);
+    if (!section) return;
+    event.preventDefault();
+    pinned = href.slice(1);
+    mark(pinned);
+    const header = parseFloat(getComputedStyle(section).scrollMarginTop) || 96;
+    const top = section.getBoundingClientRect().top + window.scrollY - header;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    window.scrollTo({ top: Math.max(0, Math.min(top, max)), behavior: "smooth" });
+    history.pushState(null, "", href);
+  });
+});
+
+window.addEventListener("wheel", releasePin, { passive: true });
+window.addEventListener("touchmove", releasePin, { passive: true });
+window.addEventListener("keydown", (event) => {
+  if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) {
+    releasePin();
+  }
 });
 
 setActive();
