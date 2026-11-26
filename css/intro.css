@@ -111,30 +111,21 @@ html.intro-pending .intro[hidden] {
 }
 
 .intro-portrait {
-  position: relative;
-  width: min(340px, 100%);
+  width: min(300px, 100%);
   justify-self: end;
 }
 
-.intro-portrait::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  inset: 18px -18px -18px 18px;
-  border-radius: 32px;
-  background: var(--surface-2);
-  border: 1px solid var(--border-strong);
-}
-
 .intro-photo {
-  position: relative;
-  z-index: 1;
   display: block;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center 42%;
   border-radius: 28px;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(0, 224, 255, 0.25);
+  box-shadow:
+    0 0 0 8px rgba(0, 224, 255, 0.06),
+    0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 .intro-piece {
@@ -162,7 +153,6 @@ html.intro-pending .intro[hidden] {
 }
 
 .intro-portrait {
-  transform: scale(1.04);
   transition-delay: 0ms;
 }
 
@@ -207,10 +197,6 @@ html.intro-leaving .intro-stage {
 
   .intro-copy {
     order: 3;
-  }
-
-  .intro-portrait::before {
-    inset: 12px -12px -12px 12px;
   }
 
   .intro-name {
