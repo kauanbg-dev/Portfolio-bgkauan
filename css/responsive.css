@@ -320,10 +320,15 @@
     margin-top: 0;
   }
 
+  .skills-pyramid,
+  .skills-row {
+    gap: 12px;
+  }
+
   .skill-item {
-    width: 76px;
-    height: 76px;
-    border-radius: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
   }
 
   .skill-item img {
