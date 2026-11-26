@@ -86,65 +86,49 @@ html.intro-pending .intro[hidden] {
   gap: 12px;
 }
 
-.intro-enter,
-.intro-resume {
-  border-radius: 12px;
-  padding: 12px 22px;
+.intro-actions .btn {
   font: inherit;
-  font-weight: 700;
   cursor: pointer;
 }
 
-.intro-enter {
+.intro-actions button.btn {
   border: 0;
-  background: var(--accent);
-  color: var(--on-accent);
 }
 
-.intro-resume {
+.intro-actions .btn.secondary {
   border: 1px solid var(--border-strong);
-  background: transparent;
-  color: var(--heading);
 }
 
-.intro-enter:focus-visible,
-.intro-resume:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
+.has-motion html.intro-pending .intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 30%),
+    var(--spotlight),
+    transparent 40%
+  );
 }
 
-html.intro-pending .intro-logo,
-html.intro-pending .intro-kicker,
-html.intro-pending .intro-name,
-html.intro-pending .intro-role,
-html.intro-pending .intro-lead,
-html.intro-pending .intro-actions {
+.intro-piece {
   opacity: 0;
-  animation: intro-in 0.7s ease forwards;
+  transform: translateY(20px);
+  transition:
+    opacity 0.45s ease var(--delay, 0ms),
+    transform 0.45s ease var(--delay, 0ms);
 }
 
-html.intro-pending .intro-logo { animation-delay: 0.12s; }
-html.intro-pending .intro-kicker { animation-delay: 0.28s; }
-html.intro-pending .intro-name { animation-delay: 0.44s; transform: translateY(12px); }
-html.intro-pending .intro-role { animation-delay: 0.62s; }
-html.intro-pending .intro-lead { animation-delay: 0.8s; }
-html.intro-pending .intro-actions { animation-delay: 1s; }
-
-@keyframes intro-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.intro-piece.is-in {
+  opacity: 1;
+  transform: none;
 }
 
 html.intro-leaving .intro {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.55s ease;
+  transition: opacity 0.45s ease;
 }
 
 @media (max-width: 560px) {
@@ -153,22 +137,16 @@ html.intro-leaving .intro {
     flex-direction: column;
   }
 
-  .intro-enter,
-  .intro-resume {
+  .intro-actions .btn {
     width: 100%;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html.intro-pending .intro-logo,
-  html.intro-pending .intro-kicker,
-  html.intro-pending .intro-name,
-  html.intro-pending .intro-role,
-  html.intro-pending .intro-lead,
-  html.intro-pending .intro-actions {
-    animation: none;
+  .intro-piece {
     opacity: 1;
     transform: none;
+    transition: none;
   }
 
   html.intro-leaving .intro {

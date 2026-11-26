@@ -23,30 +23,15 @@
     document.body.style.removeProperty("overflow");
   }
 
-  function reveal(hash) {
-    if (!hash) return;
-    const target = document.querySelector(hash);
-    if (!target) return;
-    const previous = root.style.scrollBehavior;
-    root.style.scrollBehavior = "auto";
-    target.scrollIntoView({ block: "start" });
-    root.style.scrollBehavior = previous;
-    history.replaceState(null, "", hash);
-  }
-
-  function dismiss(hash) {
+  function dismiss() {
     if (!root.classList.contains("intro-pending")) return;
     markSeen();
     if (reduceMotion) {
       unlock();
-      reveal(hash);
       return;
     }
     root.classList.add("intro-leaving");
-    window.setTimeout(() => {
-      unlock();
-      reveal(hash);
-    }, 560);
+    window.setTimeout(unlock, 450);
   }
 
   if (!shouldPlay) {
@@ -57,7 +42,15 @@
   overlay.removeAttribute("hidden");
   overlay.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+  overlay.querySelectorAll(".intro-piece").forEach((el, index) => {
+    el.style.setProperty("--delay", `${Math.min(index * 50, 200)}ms`);
+  });
+  requestAnimationFrame(() => {
+    overlay.querySelectorAll(".intro-piece").forEach((el) => el.classList.add("is-in"));
+  });
   enter?.focus();
   enter?.addEventListener("click", () => dismiss());
-  resume?.addEventListener("click", () => dismiss("#curriculo"));
+  resume?.addEventListener("click", () => {
+    markSeen();
+  });
 })();
