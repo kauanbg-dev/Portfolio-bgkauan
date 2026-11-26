@@ -36,19 +36,6 @@ html.intro-pending .intro[hidden] {
   transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.intro-brand {
-  position: absolute;
-  top: 28px;
-  left: 7%;
-  margin: 0;
-}
-
-.intro-brand img {
-  display: block;
-  height: 42px;
-  width: auto;
-}
-
 .intro-copy {
   display: flex;
   flex-direction: column;
@@ -176,12 +163,7 @@ html.intro-leaving .intro-stage {
     grid-template-columns: 1fr;
     align-items: start;
     row-gap: 28px;
-    padding: 88px 24px 48px;
-  }
-
-  .intro-brand {
-    top: 22px;
-    left: 24px;
+    padding: 48px 24px;
   }
 
   .intro-copy,
