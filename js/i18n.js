@@ -92,8 +92,6 @@ const translations = {
     skills: {
       kicker: "Skills",
       title: "Tecnologias que utilizo",
-      interface: "Interface",
-      tools: "Ferramentas",
     },
     projects: {
       kicker: "Projetos",
@@ -233,8 +231,6 @@ const translations = {
     skills: {
       kicker: "Skills",
       title: "Technologies I use",
-      interface: "Interface",
-      tools: "Tools",
     },
     projects: {
       kicker: "Projects",
