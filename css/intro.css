@@ -105,9 +105,10 @@ html.intro-pending .intro[hidden] {
 .intro-photo {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center;
   border-radius: 28px;
   border: 1px solid rgba(0, 224, 255, 0.25);
   box-shadow:
@@ -159,11 +160,18 @@ html.intro-leaving .intro-stage {
 }
 
 @media (max-width: 800px) {
+  html.intro-pending .intro {
+    overflow: hidden;
+  }
+
   .intro-stage {
+    min-height: 100dvh;
+    box-sizing: border-box;
     grid-template-columns: 1fr;
-    align-items: start;
-    row-gap: 28px;
-    padding: 48px 24px;
+    align-content: center;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 28px 22px calc(28px + env(safe-area-inset-bottom));
   }
 
   .intro-copy,
@@ -172,27 +180,47 @@ html.intro-leaving .intro-stage {
   }
 
   .intro-portrait {
-    order: 2;
-    width: min(230px, 68vw);
-    justify-self: start;
+    order: 1;
+    width: clamp(128px, 40vw, 176px);
+    justify-self: center;
   }
 
   .intro-copy {
-    order: 3;
+    order: 2;
+    align-items: center;
+    text-align: center;
+    max-width: 22rem;
   }
 
   .intro-name {
-    font-size: clamp(2.7rem, 12vw, 3.4rem);
+    font-size: 2.35rem;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
   }
-}
 
-@media (max-width: 560px) {
+  .intro-role {
+    margin-top: 12px;
+    justify-content: center;
+    font-size: 0.98rem;
+  }
+
+  .intro-lead {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .intro-actions {
-    width: 100%;
+    width: min(100%, 320px);
+    margin-top: 22px;
+    justify-content: center;
   }
 
   .intro-actions .btn {
+    width: auto;
     flex: 1;
+    min-width: 0;
+    padding: 13px 16px;
   }
 }
 
