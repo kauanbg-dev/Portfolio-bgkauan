@@ -31,7 +31,7 @@
       return;
     }
     root.classList.add("intro-leaving");
-    window.setTimeout(unlock, 450);
+    window.setTimeout(unlock, 500);
   }
 
   if (!shouldPlay) {
@@ -42,11 +42,10 @@
   overlay.removeAttribute("hidden");
   overlay.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
-  overlay.querySelectorAll(".intro-piece").forEach((el, index) => {
-    el.style.setProperty("--delay", `${Math.min(index * 50, 200)}ms`);
-  });
   requestAnimationFrame(() => {
-    overlay.querySelectorAll(".intro-piece").forEach((el) => el.classList.add("is-in"));
+    requestAnimationFrame(() => {
+      overlay.querySelectorAll(".intro-piece").forEach((el) => el.classList.add("is-in"));
+    });
   });
   enter?.focus();
   enter?.addEventListener("click", () => dismiss());
