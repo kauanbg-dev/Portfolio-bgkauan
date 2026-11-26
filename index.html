@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/responsive.css?v=5" />
   <link rel="stylesheet" href="./css/motion.css?v=3" />
-  <link rel="stylesheet" href="./css/intro.css?v=3" />
+  <link rel="stylesheet" href="./css/intro.css?v=4" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,17 +57,17 @@
     aria-labelledby="intro-title"
     hidden
   >
-    <div class="intro-glow" aria-hidden="true"></div>
     <div class="intro-stage">
-      <img class="intro-piece intro-logo" src="./img/logo-bg-iluminada.png" alt="" />
-      <p class="intro-piece intro-kicker" data-i18n="intro.kicker">Portfólio</p>
-      <h1 id="intro-title" class="intro-piece intro-name">Kauan Borges</h1>
-      <p class="intro-piece intro-role" data-i18n="intro.role">Desenvolvedor front-end</p>
-      <p class="intro-piece intro-lead" data-i18n="intro.lead">Projetos no ar e currículo pronto para uma leitura rápida.</p>
-      <div class="intro-piece intro-actions">
-        <button type="button" class="btn primary" data-intro-enter data-i18n="intro.enter">Entrar no portfólio</button>
-        <a class="btn secondary" data-intro-resume data-resume-link href="./Curriculo_Kauan_Borges.pdf" target="_blank" rel="noopener noreferrer" data-i18n="intro.resume">Ver só o currículo</a>
+      <div class="intro-copy">
+        <h1 id="intro-title" class="intro-piece intro-name">Kauan Borges</h1>
+        <p class="intro-piece intro-role" data-i18n="intro.role">Desenvolvedor front-end</p>
+        <p class="intro-piece intro-lead" data-i18n="intro.lead">Estudo Ciência da Computação e faço interface no front-end.</p>
+        <div class="intro-piece intro-actions">
+          <button type="button" class="btn primary" data-intro-enter data-i18n="intro.enter">Entrar</button>
+          <a class="btn secondary" data-intro-resume data-resume-link href="./Curriculo_Kauan_Borges.pdf" target="_blank" rel="noopener noreferrer" data-i18n="intro.resume">Currículo</a>
+        </div>
       </div>
+      <img class="intro-piece intro-photo" src="./img/perfil.jpg" data-i18n-alt="hero.photo" alt="Foto de Kauan Borges" width="280" height="280" />
     </div>
   </div>
 
@@ -511,7 +511,7 @@
   </footer>
 
   <script src="./js/theme.js"></script>
-  <script src="./js/i18n.js?v=7"></script>
+  <script src="./js/i18n.js?v=8"></script>
   <script src="./js/intro.js?v=3"></script>
   <script src="./js/interactions.js?v=3"></script>
 </body>
