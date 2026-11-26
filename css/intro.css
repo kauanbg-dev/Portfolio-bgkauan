@@ -36,8 +36,8 @@ html.intro-pending .intro[hidden] {
   justify-items: center;
   text-align: center;
   gap: 10px;
-  padding: 24px;
-  max-width: 640px;
+  padding: 28px 24px;
+  max-width: 720px;
 }
 
 .intro-logo {
@@ -65,15 +65,29 @@ html.intro-pending .intro[hidden] {
 }
 
 .intro-role {
-  margin: 0 0 18px;
-  color: var(--text-muted);
+  margin: 0;
+  color: var(--accent-text);
   font-size: 1.05rem;
+  font-weight: 600;
 }
 
-.intro-enter {
-  border: 0;
-  background: var(--accent);
-  color: var(--on-accent);
+.intro-lead {
+  margin: 4px 0 14px;
+  max-width: 38rem;
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.intro-enter,
+.intro-resume {
   border-radius: 12px;
   padding: 12px 22px;
   font: inherit;
@@ -81,20 +95,40 @@ html.intro-pending .intro[hidden] {
   cursor: pointer;
 }
 
+.intro-enter {
+  border: 0;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.intro-resume {
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--heading);
+}
+
+.intro-enter:focus-visible,
+.intro-resume:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 html.intro-pending .intro-logo,
 html.intro-pending .intro-kicker,
 html.intro-pending .intro-name,
 html.intro-pending .intro-role,
-html.intro-pending .intro-enter {
+html.intro-pending .intro-lead,
+html.intro-pending .intro-actions {
   opacity: 0;
   animation: intro-in 0.7s ease forwards;
 }
 
-html.intro-pending .intro-logo { animation-delay: 0.15s; }
-html.intro-pending .intro-kicker { animation-delay: 0.4s; }
-html.intro-pending .intro-name { animation-delay: 0.62s; transform: translateY(12px); }
-html.intro-pending .intro-role { animation-delay: 0.88s; }
-html.intro-pending .intro-enter { animation-delay: 1.12s; }
+html.intro-pending .intro-logo { animation-delay: 0.12s; }
+html.intro-pending .intro-kicker { animation-delay: 0.28s; }
+html.intro-pending .intro-name { animation-delay: 0.44s; transform: translateY(12px); }
+html.intro-pending .intro-role { animation-delay: 0.62s; }
+html.intro-pending .intro-lead { animation-delay: 0.8s; }
+html.intro-pending .intro-actions { animation-delay: 1s; }
 
 @keyframes intro-in {
   from {
@@ -113,12 +147,25 @@ html.intro-leaving .intro {
   transition: opacity 0.55s ease;
 }
 
+@media (max-width: 560px) {
+  .intro-actions {
+    width: min(100%, 320px);
+    flex-direction: column;
+  }
+
+  .intro-enter,
+  .intro-resume {
+    width: 100%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html.intro-pending .intro-logo,
   html.intro-pending .intro-kicker,
   html.intro-pending .intro-name,
   html.intro-pending .intro-role,
-  html.intro-pending .intro-enter {
+  html.intro-pending .intro-lead,
+  html.intro-pending .intro-actions {
     animation: none;
     opacity: 1;
     transform: none;

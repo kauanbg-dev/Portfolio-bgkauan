@@ -4,6 +4,7 @@
 
   const root = document.documentElement;
   const enter = overlay.querySelector("[data-intro-enter]");
+  const resume = overlay.querySelector("[data-intro-resume]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const storageKey = "kb-intro-seen";
 
@@ -22,15 +23,30 @@
     document.body.style.removeProperty("overflow");
   }
 
-  function dismiss() {
+  function reveal(hash) {
+    if (!hash) return;
+    const target = document.querySelector(hash);
+    if (!target) return;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    target.scrollIntoView({ block: "start" });
+    root.style.scrollBehavior = previous;
+    history.replaceState(null, "", hash);
+  }
+
+  function dismiss(hash) {
     if (!root.classList.contains("intro-pending")) return;
     markSeen();
     if (reduceMotion) {
       unlock();
+      reveal(hash);
       return;
     }
     root.classList.add("intro-leaving");
-    window.setTimeout(unlock, 560);
+    window.setTimeout(() => {
+      unlock();
+      reveal(hash);
+    }, 560);
   }
 
   if (!shouldPlay) {
@@ -42,5 +58,6 @@
   overlay.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
   enter?.focus();
-  enter?.addEventListener("click", dismiss);
+  enter?.addEventListener("click", () => dismiss());
+  resume?.addEventListener("click", () => dismiss("#curriculo"));
 })();
