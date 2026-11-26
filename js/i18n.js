@@ -8,7 +8,7 @@ const translations = {
     skip: "Pular para o conteúdo",
     intro: {
       kicker: "Portfólio",
-      role: "Desenvolvedor front-end · JavaScript, React e Node.js",
+      role: "Desenvolvedor front-end",
       lead: "Projetos no ar e currículo pronto para uma leitura rápida.",
       enter: "Entrar no portfólio",
       resume: "Ver só o currículo",
@@ -148,7 +148,7 @@ const translations = {
     skip: "Skip to content",
     intro: {
       kicker: "Portfolio",
-      role: "Frontend developer · JavaScript, React and Node.js",
+      role: "Frontend developer",
       lead: "Shipped projects and a resume ready to read.",
       enter: "Enter the portfolio",
       resume: "View resume only",
